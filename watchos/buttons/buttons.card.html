@@ -1,0 +1,21 @@
+<!-- @dsCard group="watchOS" viewport="1200x720" name="watchOS · Buttons" subtitle="Pill, circular, petite, corner and Apple Pay buttons with glass fills" -->
+<!DOCTYPE html><html><head><meta charset="utf-8"><link rel="stylesheet" href="../../styles.css">
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="../../_ds_bundle.js"></script>
+<style>*{margin:0;padding:0;box-sizing:border-box}body{font-family:"SF Compact","Zoho Puvi",-apple-system,system-ui,sans-serif;background:rgb(36,36,36);color:#fff}.lbl{font-size:11px;color:rgba(255,255,255,0.6);letter-spacing:0.2px}.sec{font-size:13px;font-weight:600;color:rgba(255,255,255,0.85)}#root{padding:28px;display:flex;flex-direction:column;gap:30px}</style>
+</head><body><div id="root"></div>
+<script>
+const NS=window.ZhareHubDesignSystem_d00ac0||{};const h=React.createElement;
+const cell=(label,node,style)=>h('div',{style:{display:'flex',flexDirection:'column',alignItems:'center',gap:10}},h('div',{style:Object.assign({display:'flex',alignItems:'center',justifyContent:'center'},style||{})},node),h('div',{className:'lbl'},label));
+const row=(title,kids)=>h('div',{style:{display:'flex',flexDirection:'column',gap:14}},h('div',{className:'sec'},title),h('div',{style:{display:'flex',flexWrap:'wrap',gap:28,alignItems:'flex-end'}},...kids));
+
+const {WatchButtonPill,WatchButtonCircular,WatchButtonPetite,WatchButtonCorner,WatchButtonPay,WatchButtonFloatingDefault,WatchFaces}=NS;
+const blk={background:'#000',borderRadius:14,padding:12};
+ReactDOM.createRoot(document.getElementById('root')).render(h(React.Fragment,null,
+ row('Pill · 162pt (40mm)',['default','primary','secondary','destructive'].map(t=>cell(t,h(WatchButtonPill,{type:t}),blk))),
+ row('Pill · floating, over content',['default floating','primary floating','destructive floating'].map(t=>cell(t,h('div',{style:{position:'relative',width:186,height:76,borderRadius:14,overflow:'hidden'}},h(WatchFaces,{face:'flux',size:'49mm',style:{position:'absolute',left:-10,top:-90}}),h('div',{style:{position:'absolute',inset:0,display:'flex',alignItems:'center',justifyContent:'center'}},h(WatchButtonPill,{type:t})))))),
+ row('Circular · 39.5pt',['default','primary','default floating','primary floating'].map(t=>cell(t,h(WatchButtonCircular,{type:t}),Object.assign({width:72,height:64},blk)))),
+ row('Other',[cell('Petite',h(WatchButtonPetite),blk),cell('Corner',h(WatchButtonCorner),blk),cell('Floating / Default',h(WatchButtonFloatingDefault),blk),cell('Pay · small',h(WatchButtonPay,{size:'sm'}),blk),cell('Pay · full width',h(WatchButtonPay,{size:'full width'}),blk)])
+));
+</script></body></html>

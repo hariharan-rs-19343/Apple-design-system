@@ -1,0 +1,22 @@
+<!-- @dsCard group="watchOS" viewport="1400x1500" name="watchOS · Examples" subtitle="Example screens in the 49mm Ultra bezel" -->
+<!DOCTYPE html><html><head><meta charset="utf-8"><link rel="stylesheet" href="../../styles.css">
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="../../_ds_bundle.js"></script>
+<style>*{margin:0;padding:0;box-sizing:border-box}body{font-family:"SF Compact","Zoho Puvi",-apple-system,system-ui,sans-serif;background:rgb(36,36,36);color:#fff}.lbl{font-size:11px;color:rgba(255,255,255,0.6);letter-spacing:0.2px;text-align:center}.sec{font-size:13px;font-weight:600;color:rgba(255,255,255,0.85)}#root{padding:28px;display:grid;grid-template-columns:repeat(auto-fill,minmax(186px,1fr));gap:28px 20px;justify-items:center}.cell{display:flex;flex-direction:column;align-items:center;gap:8px}.frame{width:186px;height:292px;position:relative}.inner{position:absolute;left:0;top:0;width:300px;height:470px;transform:scale(0.62);transform-origin:0 0;display:flex;align-items:center;justify-content:center}</style>
+</head><body><div id="root"></div>
+<script>
+const NS=window.ZhareHubDesignSystem_d00ac0||{};const h=React.createElement;
+
+const list=[['WatchExampleAlerts',{}, 'Alerts'],['WatchExamplesActionSheets',{},'Action Sheets'],['WatchExampleButtons',{},'Buttons'],
+...['title only','title + description','title with close button','symbol + description','description only'].map(t=>['WatchExampleErrors',{type:t},'Errors · '+t]),
+...['grouped list items','colorful','menu','workout'].map(t=>['WatchExampleLists',{type:t},'Lists · '+t]),
+['WatchExampleNavigationBars',{},'Navigation Bars'],
+...['banner','short look','long look'].map(t=>['WatchExampleNotifications',{type:t},'Notifications · '+t]),
+['WatchExamplePageControls',{},'Page Controls'],
+...['1','2','3','3 (mixed widths)'].map(t=>['WatchExamplePickers',{wheels:t},'Pickers · '+t+' wheel'+(t==='1'?'':'s')]),
+...['inline table row','content area'].map(t=>['WatchExampleProgressIndicators',{type:t},'Progress · '+t]),
+['WatchExampleScrollbars',{},'Scrollbars'],['WatchExampleSliders',{},'Sliders'],['WatchExampleSmartStackWidgets',{},'Smart Stack'],['WatchExampleToggles',{},'Toggles']];
+class Safe extends React.Component{constructor(p){super(p);this.state={e:null}}static getDerivedStateFromError(e){return{e}}render(){return this.state.e?h('div',{className:'lbl'},'render error'):this.props.children}}
+ReactDOM.createRoot(document.getElementById('root')).render(h(React.Fragment,null,...list.filter(x=>NS[x[0]]).map(([n,p,l],i)=>h('div',{className:'cell',key:i},h('div',{className:'frame'},h('div',{className:'inner','data-watch-mode':'49mm'},h(Safe,null,h(NS[n],p)))),h('div',{className:'lbl'},l)))));
+</script></body></html>

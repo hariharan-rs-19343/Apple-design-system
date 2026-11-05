@@ -1,0 +1,35 @@
+<!-- @dsCard group="Components" viewport="700x300" name="Accessory Bars" subtitle="Keyboard accessory bars — find, find & replace, URL, web form, toolbar, autocorrection, emoji search" -->
+<!DOCTYPE html><html><head><meta charset="utf-8"><link rel="stylesheet" href="../../styles.css"><style>*{margin:0;padding:0;box-sizing:border-box}body{font-family:"SF Pro",-apple-system,BlinkMacSystemFont,system-ui,sans-serif;background:rgb(245,245,245);padding:14px;min-height:100vh}
+.sf{font-family:"SF Pro",-apple-system,system-ui,sans-serif}
+.grid{display:grid;grid-template-columns:repeat(2,402px);gap:10px 14px;justify-content:center;zoom:0.82}
+.cell{display:flex;flex-direction:column;gap:6px}.lbl{font-size:13px;color:rgba(60,60,67,0.6);text-align:center}
+.kb{width:402px;border-radius:24px;padding:8px 8px;display:flex;align-items:center;gap:8px;min-height:64px;background:rgb(226,228,233)}
+.kb.dk{background:rgb(43,43,45)}
+.g{height:48px;min-width:48px;border-radius:1000px;display:flex;align-items:center;justify-content:center;flex-shrink:0;background:rgb(247,247,247);box-shadow:0 8px 40px rgba(0,0,0,0.12),inset 0 1px 1px rgba(255,255,255,0.9);color:rgb(26,26,26)}
+.dk .g{background:rgb(64,64,64);box-shadow:0 8px 40px rgba(0,0,0,0.12),inset 0 1px 1px rgba(255,255,255,0.08);color:rgb(245,245,245)}
+.g.grp{padding:0 4px}.g.grp .s{width:40px}
+.g.pri{background:rgb(0,136,255);color:#fff}
+.s{height:48px;width:48px;display:flex;align-items:center;justify-content:center;font-size:19px;font-weight:510;line-height:1}
+.s.off{opacity:0.3}
+.fld{flex:1;height:48px;border-radius:1000px;display:flex;align-items:center;gap:6px;padding:0 14px;background:rgb(247,247,247);box-shadow:0 8px 40px rgba(0,0,0,0.12),inset 0 1px 1px rgba(255,255,255,0.9);font-size:17px;line-height:22px;color:rgb(26,26,26);min-width:0}
+.dk .fld{background:rgb(64,64,64);color:rgb(245,245,245)}
+.fld .ph{color:rgba(60,60,67,0.3)}.dk .fld .ph{color:rgba(235,235,245,0.3)}
+.fld .ct{margin-left:auto;font-size:15px;color:rgba(60,60,67,0.6);white-space:nowrap}.dk .fld .ct{color:rgba(235,235,245,0.6)}
+.fld .ic{font-size:15px;color:rgba(60,60,67,0.6)}.dk .fld .ic{color:rgba(235,235,245,0.6)}
+.clr{width:18px;height:18px;border-radius:50%;background:rgba(60,60,67,0.3);color:#fff;font-size:9px;font-weight:700;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.col .fld,.kb[style*="column"] .fld{flex:none;height:40px}.col{flex:1;display:flex;flex-direction:column;gap:8px;min-width:0}
+.cur{display:inline-block;width:2px;height:22px;border-radius:1px;background:rgb(0,136,255);vertical-align:-5px}
+.ac{flex:1;height:48px;display:flex;align-items:center}.ac span{flex:1;text-align:center;font-size:17px;line-height:22px;color:rgb(26,26,26);position:relative}
+.ac span+span:before{content:"";position:absolute;left:0;top:2px;bottom:2px;width:1px;background:rgba(60,60,67,0.18)}
+.ac span.on{background:rgb(252,252,254);border-radius:10px;padding:5px 0;box-shadow:0 1px 0 rgba(0,0,0,0.16)}
+.web{flex:1;text-align:center;font-size:13px;color:rgba(60,60,67,0.6)}
+.emo{display:flex;justify-content:space-between;width:100%;padding:0 6px;font-size:17px;color:rgba(60,60,67,0.6)}.emo .on{color:rgb(26,26,26);background:rgba(0,0,0,0.08);border-radius:50%;width:28px;height:28px;display:flex;align-items:center;justify-content:center}.emo span{width:28px;height:28px;display:flex;align-items:center;justify-content:center}</style></head><body><div class="grid">
+<div class="cell"><div class="kb"><div class="g grp"><span class="s sf">􀆇</span><span class="s sf">􀆈</span></div><div class="fld"><span class="ic sf">􀊫</span>Find<span class="ct">3 of 6</span><span class="clr sf">􀆄</span></div><div class="g pri"><span class="s sf">􀆅</span></div></div><div class="lbl">Find</div></div>
+<div class="cell"><div class="kb"><div class="g grp"><span class="s sf">􀆇</span><span class="s sf">􀆈</span></div><div class="col"><div class="fld"><span class="ic sf">􀊫</span>Find<span class="ct">3 of 6</span></div><div class="fld"><span class="ic sf">􀈊</span><span class="ph">Replace</span></div></div><div class="g pri"><span class="s sf">􀆅</span></div></div><div class="lbl">Find &amp; Replace</div></div>
+<div class="cell"><div class="kb"><div class="fld">https://www.<span class="cur"></span><span class="clr sf" style="margin-left:auto">􀆄</span></div><div class="g"><span class="s sf">􀆄</span></div></div><div class="lbl">URL</div></div>
+<div class="cell"><div class="kb"><div class="g grp"><span class="s sf">􀆇</span><span class="s sf">􀆈</span></div><span class="web">apple.com</span><div class="g pri"><span class="s sf">􀆅</span></div></div><div class="lbl">Web Form</div></div>
+<div class="cell"><div class="kb" style="justify-content:center"><div class="g grp"><span class="s sf">􀓔</span><span class="s sf">􀓔</span><span class="s sf">􀓔</span></div><div class="g grp"><span class="s sf">􀓔</span><span class="s sf">􀓔</span><span class="s sf">􀓔</span><span class="s sf">􀓔</span><span class="s sf">􀓔</span></div></div><div class="lbl">Toolbar · 3 / 5 symbols</div></div>
+<div class="cell"><div class="kb"><div class="ac"><span>“The”</span><span class="on">the</span><span>to</span></div></div><div class="lbl">Autocorrection</div></div>
+<div class="cell"><div class="kb" style="flex-direction:column;align-items:stretch"><div class="fld"><span class="ic sf">􀊫</span><span class="ph">Search Emoji</span></div><div class="emo"><span class="sf">􀐫</span><span class="on sf">􀎸</span><span class="sf">􀒩</span><span class="sf">􀝣</span><span class="sf">􀎮</span><span class="sf">􀊵</span><span class="sf">􀋊</span><span class="sf">􀆛</span></div></div><div class="lbl">Emoji search &amp; tabs</div></div>
+<div class="cell"><div class="kb dk"><div class="g grp"><span class="s sf">􀆇</span><span class="s sf">􀆈</span></div><div class="fld"><span class="ic sf">􀊫</span>Find<span class="ct">3 of 6</span><span class="clr sf">􀆄</span></div><div class="g pri"><span class="s sf">􀆅</span></div></div><div class="lbl">Find · Dark</div></div>
+</div></body></html>

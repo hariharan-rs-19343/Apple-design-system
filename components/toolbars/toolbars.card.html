@@ -1,0 +1,45 @@
+<!-- @dsCard group="Components" viewport="700x310" name="Toolbars" subtitle="Sheet top toolbar — default, 2-line, 2-line left, large title, compact large" -->
+<!DOCTYPE html><html><head><meta charset="utf-8"><link rel="stylesheet" href="../../styles.css">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:"SF Pro",-apple-system,BlinkMacSystemFont,system-ui,sans-serif;background:rgb(245,245,245);padding:14px;display:grid;grid-template-columns:repeat(2,402px);gap:12px 14px;justify-content:center;zoom:0.82}
+.sheet{width:402px;background:#fff;border-radius:34px 34px 0 0;padding:0 0 10px;display:flex;flex-direction:column;align-items:center;position:relative;box-shadow:0 0 0 0.5px rgba(0,0,0,0.04)}
+.grab{width:100%;height:15px;padding:5px 0;display:flex;justify-content:center}
+.grab i{width:36px;height:5px;border-radius:100px;background:rgba(60,60,67,0.3)}
+.row{width:100%;height:44px;padding:0 16px;display:flex;align-items:center;justify-content:space-between;position:relative}
+.g{width:44px;height:44px;border-radius:296px;display:flex;align-items:center;justify-content:center;flex-shrink:0;background:rgb(247,247,247);box-shadow:0 8px 40px 0 rgba(0,0,0,0.12),inset 0 1px 1px rgba(255,255,255,0.9)}
+.g.pri{background:rgb(0,136,255);box-shadow:0 8px 40px 0 rgba(0,0,0,0.12)}
+.s{font-size:19px;font-weight:510;line-height:1;color:rgb(26,26,26);display:flex;align-items:center;justify-content:center;width:44px;height:44px}
+.pri .s{color:#fff;font-weight:590}
+.mid{position:absolute;left:76px;right:76px;top:0;bottom:0;display:flex;flex-direction:column;justify-content:center;align-items:center;pointer-events:none}
+.mid.left{align-items:flex-start}
+.t{font-size:17px;font-weight:590;line-height:22px;letter-spacing:-0.43px;color:rgb(0,0,0);white-space:nowrap}
+.st{font-size:12px;line-height:16px;color:rgba(60,60,67,0.6);white-space:nowrap}
+.lt{width:100%;padding:5px 16px;display:flex;flex-direction:column}
+.lt .t{font-size:34px;font-weight:700;line-height:41px;letter-spacing:0.4px}
+.cl{width:100%;padding:0 16px;display:flex;align-items:center;gap:10px}
+.cl .tb{flex:1;display:flex;flex-direction:column;padding:1px 2px}
+.cl .t{font-size:22px;font-weight:700;line-height:28px;letter-spacing:-0.26px}
+.lbl{grid-column:span 1;font-size:13px;color:rgba(60,60,67,0.6);text-align:center;margin-top:-6px}
+</style></head><body>
+<div>
+<div class="sheet"><div class="grab"><i></i></div><div class="row"><div class="g"><div class="s">􀆄</div></div><div class="mid"><div class="t">Title</div></div><div class="g pri"><div class="s">􀆅</div></div></div></div>
+<div class="lbl" style="margin-top:6px">Default</div>
+</div>
+<div>
+<div class="sheet"><div class="grab"><i></i></div><div class="row"><div class="g"><div class="s">􀆄</div></div><div class="mid"><div class="t">Title</div><div class="st">Subtitle</div></div><div class="g pri"><div class="s">􀆅</div></div></div></div>
+<div class="lbl" style="margin-top:6px">Title 2 Line</div>
+</div>
+<div>
+<div class="sheet"><div class="grab"><i></i></div><div class="row"><div class="g"><div class="s">􀆄</div></div><div class="mid left"><div class="t">Title</div><div class="st">Subtitle</div></div><div class="g pri"><div class="s">􀆅</div></div></div></div>
+<div class="lbl" style="margin-top:6px">Title 2 Line Left</div>
+</div>
+<div>
+<div class="sheet"><div class="grab"><i></i></div><div class="cl"><div class="g"><div class="s">􀆄</div></div><div class="tb"><div class="t">Title</div><div class="st">Subtitle</div></div><div class="g pri"><div class="s">􀆅</div></div></div></div>
+<div class="lbl" style="margin-top:6px">Compact Large</div>
+</div>
+<div style="grid-column:span 2;justify-self:center">
+<div class="sheet"><div class="grab"><i></i></div><div class="row"><div class="g"><div class="s">􀆄</div></div><div class="g pri"><div class="s">􀆅</div></div></div><div class="lt"><div class="t">Title</div></div></div>
+<div class="lbl" style="margin-top:6px">Large Title</div>
+</div>
+</body></html>

@@ -1,0 +1,31 @@
+<!-- @dsCard group="Components" viewport="700x200" name="Toggle Switch" subtitle="On / Off with accessibility labels, and in a list row" -->
+<!DOCTYPE html><html><head><meta charset="utf-8"><link rel="stylesheet" href="../../styles.css">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,BlinkMacSystemFont,"SF Pro",system-ui,sans-serif;background:rgb(245,245,245);padding:24px;display:flex;flex-direction:column;gap:20px}
+.row{display:flex;gap:28px;align-items:flex-end}
+.cell{display:flex;flex-direction:column;align-items:center;gap:8px}
+.lbl{font-size:11px;color:rgba(60,60,67,0.6)}
+.tg{position:relative;width:64px;height:28px;border-radius:100px;overflow:hidden}
+.on{background:rgb(52,199,89)}
+.off{background:rgba(60,60,67,0.3)}
+.knob{position:absolute;top:2px;width:39px;height:24px;border-radius:100px;background:#fff}
+.on .knob{left:23px}.off .knob{left:2px}
+.ax-on{position:absolute;left:12px;top:9px;width:1px;height:10px;background:#fff}
+.ax-off{position:absolute;left:46.5px;top:9px;width:10px;height:10px;border-radius:50%;box-shadow:inset 0 0 0 1px rgb(179,179,179)}
+.list{width:402px;background:#fff;border-radius:26px;overflow:hidden}
+.li{height:52px;display:flex;align-items:center;justify-content:space-between;padding:0 16px;font-size:17px;letter-spacing:-0.43px;color:#000}
+.sep{height:0.5px;background:rgba(60,60,67,0.29);margin-left:16px}
+</style></head><body>
+<div class="row">
+<div class="cell"><div class="tg on"><div class="knob"></div></div><div class="lbl">On</div></div>
+<div class="cell"><div class="tg off"><div class="knob"></div></div><div class="lbl">Off</div></div>
+<div class="cell"><div class="tg on"><div class="ax-on"></div><div class="knob"></div></div><div class="lbl">On · AX labels</div></div>
+<div class="cell"><div class="tg off"><div class="ax-off"></div><div class="knob"></div></div><div class="lbl">Off · AX labels</div></div>
+</div>
+<div class="list">
+<div class="li">Wi-Fi<div class="tg on"><div class="knob"></div></div></div>
+<div class="sep"></div>
+<div class="li">Bluetooth<div class="tg off"><div class="knob"></div></div></div>
+</div>
+</body></html>

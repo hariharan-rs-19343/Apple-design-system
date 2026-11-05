@@ -1,0 +1,49 @@
+<!-- @dsCard group="Components" viewport="700x340" name="Menus" subtitle="Edit menu bar, context menu items and menu indicator — light and dark" -->
+<!DOCTYPE html><html><head><meta charset="utf-8"><link rel="stylesheet" href="../../styles.css">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,BlinkMacSystemFont,"SF Pro",system-ui,sans-serif;background:url(../../assets/wallpaper-ios26.jpg) center/cover;padding:20px;display:grid;grid-template-columns:1fr 1fr;gap:18px;min-height:100vh}
+.col{display:flex;flex-direction:column;gap:14px;align-items:flex-start}
+.sf{font-family:"SF Pro",-apple-system,system-ui,sans-serif}
+.edit{height:44px;border-radius:1000px;display:flex;align-items:center;padding-left:16px;box-shadow:0 8px 40px 0 rgba(0,0,0,0.12)}
+.edit.l{background:rgb(247,247,247)}.edit.d{background:rgb(18,18,18)}
+.ei{display:flex;align-items:center;gap:16px;padding-right:16px;height:20px}
+.ei:first-child .bar{display:none}
+.bar{width:1px;align-self:stretch}
+.l .bar{background:rgb(204,204,204)}.d .bar{background:rgb(51,51,51)}
+.ei span{font-size:15px;line-height:100%;letter-spacing:-0.6px;white-space:nowrap}
+.l .ei span{color:rgb(26,26,26)}.d .ei span{color:rgb(245,245,245)}
+.l .ei.x span{color:rgb(255,56,60)}.d .ei.x span{color:rgb(255,66,69)}
+.menu{width:250px;border-radius:34px;padding:10px 0;box-shadow:0 8px 40px 0 rgba(0,0,0,0.12)}
+.menu.l{background:rgb(247,247,247)}.menu.d{background:rgb(18,18,18)}
+.mi{height:44px;display:flex;align-items:center;justify-content:space-between;padding:0 16px;font-size:17px;line-height:22px;letter-spacing:-0.4px}
+.l .mi{color:rgb(0,0,0)}.d .mi{color:rgb(255,255,255)}
+.l .mi.x{color:rgb(255,56,60)}.d .mi.x{color:rgb(255,66,69)}
+.mi .sf{font-size:17px;width:24px;text-align:center}
+.sep{height:0.5px;margin:4px 16px}
+.l .sep{background:rgba(60,60,67,0.18)}.d .sep{background:rgba(235,235,245,0.18)}
+.ind{width:36px;height:36px;border-radius:100px;display:flex;align-items:center;justify-content:center;font-size:15px;font-weight:590;letter-spacing:-0.6px}
+.ind.l{background:rgb(237,237,237);color:rgb(26,26,26)}.ind.d{background:rgb(18,18,18);color:rgb(245,245,245)}
+.r{display:flex;gap:10px;align-items:center}
+</style></head><body>
+<div class="col">
+<div class="edit l"><div class="ei"><i class="bar"></i><span>Cut</span></div><div class="ei"><i class="bar"></i><span>Copy</span></div><div class="ei"><i class="bar"></i><span>Paste</span></div><div class="ei x"><i class="bar"></i><span>Delete</span></div></div>
+<div class="menu l">
+<div class="mi">Label<span class="sf">􀓔</span></div>
+<div class="mi">Label<span class="sf">􀓔</span></div>
+<div class="sep"></div>
+<div class="mi x">Label<span class="sf">􀓔</span></div>
+</div>
+<div class="r"><div class="ind l sf">􀆊</div></div>
+</div>
+<div class="col">
+<div class="edit d"><div class="ei"><i class="bar"></i><span>Cut</span></div><div class="ei"><i class="bar"></i><span>Copy</span></div><div class="ei"><i class="bar"></i><span>Paste</span></div><div class="ei x"><i class="bar"></i><span>Delete</span></div></div>
+<div class="menu d">
+<div class="mi">Label<span class="sf">􀓔</span></div>
+<div class="mi">Label<span class="sf">􀓔</span></div>
+<div class="sep"></div>
+<div class="mi x">Label<span class="sf">􀓔</span></div>
+</div>
+<div class="r"><div class="ind d sf">􀆊</div></div>
+</div>
+</body></html>

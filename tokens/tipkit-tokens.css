@@ -1,0 +1,55 @@
+/* TipKit (Community).fig — tokens not already in fig-tokens.css. First mode = :root default.
+   FLOAT tokens are unitless — multiply by 1px in calc() where a length is needed. */
+
+:root {
+  --accents-blue-2: rgb(0,136,255); /* @kind color */
+  --accents-blue-3: rgb(0,136,255); /* @kind color */
+  --button-padding-horizontal: 7;
+  --controls-destructive-red: rgb(255,56,60); /* @kind color */
+  --controls-tint: rgb(13,111,255); /* @kind color */
+  --global-font-size: 10;
+  --ios-secondary-label: rgba(60,60,67,0.6); /* @kind color */
+  --labels-primary-2: rgba(0,0,0,0.85); /* @kind color */
+  --labels-vibrant-use-plus-lighter-darker-secondary: rgb(128,128,128); /* @kind color */
+  --labels-white: rgb(255,255,255); /* @kind color */
+  --mode-3: "Light"; /* @kind other */
+}
+
+:root[data-theme="dark"], .dark {
+  --accents-blue-2: rgb(0,145,255); /* @kind color */
+  --accents-blue-2: rgb(92,184,255); /* @kind color */
+  --accents-blue-3: rgb(0,145,255); /* @kind color */
+  --controls-destructive-red: rgb(0,0,0); /* @kind color */
+  --controls-tint: rgb(0,0,0); /* @kind color */
+  --ios-secondary-label: rgba(235,235,245,0.6); /* @kind color */
+  --ios-secondary-label: rgba(235,235,245,0.6); /* @kind color */
+  --labels-primary-2: rgba(255,255,255,0.85); /* @kind color */
+  --labels-vibrant-use-plus-lighter-darker-secondary: rgb(124,124,124); /* @kind color */
+  --labels-white: rgb(255,255,255); /* @kind color */
+  --mode-3: "Dark"; /* @kind other */
+}
+
+:root[data-theme="light"], .light {
+  --accents-blue-2: rgb(30,110,244); /* @kind color */
+}
+
+:root[data-mode="small"] {
+  --button-padding-horizontal: 10;
+  --global-font-size: 11;
+}
+
+:root[data-mode="medium"] {
+  --button-padding-horizontal: 16;
+  --global-font-size: 13;
+}
+
+:root[data-mode="large"] {
+  --button-padding-horizontal: 16;
+  --global-font-size: 13;
+}
+
+:root[data-mode="xl"] {
+  --button-padding-horizontal: 16;
+  --global-font-size: 13;
+}
+

@@ -1,0 +1,23 @@
+<!-- @dsCard group="watchOS" viewport="1400x1000" name="watchOS · Bezels & Watch Faces" subtitle="Five case sizes framing the Modular face, plus Flux and Activity Analog faces" -->
+<!DOCTYPE html><html><head><meta charset="utf-8"><link rel="stylesheet" href="../../styles.css">
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="../../_ds_bundle.js"></script>
+<style>*{margin:0;padding:0;box-sizing:border-box}body{font-family:"SF Compact","Zoho Puvi",-apple-system,system-ui,sans-serif;background:rgb(36,36,36);color:#fff}.lbl{font-size:11px;color:rgba(255,255,255,0.6);letter-spacing:0.2px}.sec{font-size:13px;font-weight:600;color:rgba(255,255,255,0.85)}#root{padding:28px;display:flex;flex-direction:column;gap:34px}</style>
+</head><body><div id="root"></div>
+<script>
+const NS=window.ZhareHubDesignSystem_d00ac0||{};const h=React.createElement;
+const cell=(label,node,style)=>h('div',{style:{display:'flex',flexDirection:'column',alignItems:'center',gap:10}},h('div',{style:Object.assign({display:'flex',alignItems:'center',justifyContent:'center'},style||{})},node),h('div',{className:'lbl'},label));
+const row=(title,kids)=>h('div',{style:{display:'flex',flexDirection:'column',gap:14}},h('div',{className:'sec'},title),h('div',{style:{display:'flex',flexWrap:'wrap',gap:28,alignItems:'flex-end'}},...kids));
+
+const {WatchBezels,WatchFaces,WatchMode,WatchMeasurement,WatchStickerSheet}=NS;
+const sizes=['40mm','42mm','44mm','46mm','49mm'];
+const framed=(s,face)=>h('div',{'data-watch-mode':s,style:{width:300,height:470,display:'flex',alignItems:'center',justifyContent:'center'}},h('div',{style:{position:'relative'}},h(WatchFaces,{face,size:s,style:{position:'absolute',left:0,top:0}}),h(WatchBezels,{bezelSize:s})));
+const zoomed=(kids)=>h('div',{style:{zoom:0.62,display:'flex',gap:24,alignItems:'center'}},...kids);
+ReactDOM.createRoot(document.getElementById('root')).render(h(React.Fragment,null,
+ row('Bezels · Modular face',[zoomed(sizes.map(s=>cell(s,framed(s,'modular'))))]),
+ row('Faces · Flux',sizes.map(s=>cell(s,h(WatchFaces,{face:'flux',size:s,style:{borderRadius:32,overflow:'hidden'}})))),
+ row('Faces · Activity Analog',sizes.map(s=>cell(s,h(WatchFaces,{face:'activity analog',size:s,style:{borderRadius:32,overflow:'hidden'}})))),
+ row('Kit helpers',[cell('Mode · Dark',h(WatchMode,{mode:'dark'})),cell('Mode · Light',h(WatchMode,{mode:'light'})),cell('Measurement',h(WatchMeasurement)),cell('Sticker Sheet · Dark',h(WatchStickerSheet,{mode:'dark'})),cell('Sticker Sheet · Light',h(WatchStickerSheet,{mode:'light'}))])
+));
+</script></body></html>

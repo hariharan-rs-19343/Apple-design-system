@@ -1,0 +1,71 @@
+/* ZhareHub brand palette. Light is default; dark via :root[data-theme="dark"] or .dark (matches fig-tokens). */
+:root, .light {
+--zh-primary-50: #EEF5FC; /* @kind color */
+--zh-primary-100: #D6E7F7; /* @kind color */
+--zh-primary-200: #ADCFEF; /* @kind color */
+--zh-primary-300: #7FB3E5; /* @kind color */
+--zh-primary-400: #4F93D6; /* @kind color */
+--zh-primary-500: #226DB4; /* @kind color */
+--zh-primary-600: #1C5D9A; /* @kind color */
+--zh-primary-700: #174C7E; /* @kind color */
+--zh-primary-800: #113A61; /* @kind color */
+--zh-primary-900: #0B2742; /* @kind color */
+
+--zh-primary: #226DB4; /* @kind color */
+--zh-primary-pressed: #1B5A96; /* @kind color */
+--zh-on-primary: #FFFFFF; /* @kind color */
+--zh-primary-container: #E3EEF9; /* @kind color */
+--zh-on-primary-container: #0F3A63; /* @kind color */
+
+--zh-secondary: #0E7C72; /* @kind color */
+--zh-secondary-pressed: #0A655D; /* @kind color */
+--zh-on-secondary: #FFFFFF; /* @kind color */
+--zh-secondary-container: #DDF3F0; /* @kind color */
+--zh-on-secondary-container: #0A4A44; /* @kind color */
+
+--zh-tertiary: #AD5615; /* @kind color */
+--zh-tertiary-pressed: #8F4610; /* @kind color */
+--zh-on-tertiary: #FFFFFF; /* @kind color */
+--zh-tertiary-container: #FBE9DB; /* @kind color */
+--zh-on-tertiary-container: #5C2D0A; /* @kind color */
+
+--zh-disabled-fill: #E4E7EB; /* @kind color */
+--zh-disabled-label: #A1A8B0; /* @kind color */
+--zh-disabled-border: #D3D8DE; /* @kind color */
+
+--zh-background: #FFFFFF; /* @kind color */
+--zh-surface: #F5F7FA; /* @kind color */
+--zh-label: #0F1B2A; /* @kind color */
+--zh-label-secondary: #4A5767; /* @kind color */
+--zh-separator: #DDE2E8; /* @kind color */
+}
+
+:root[data-theme="dark"], .dark {
+--zh-primary: #5FA8EE; /* @kind color */
+--zh-primary-pressed: #4A92D6; /* @kind color */
+--zh-on-primary: #0A2540; /* @kind color */
+--zh-primary-container: #123A61; /* @kind color */
+--zh-on-primary-container: #D3E6FA; /* @kind color */
+
+--zh-secondary: #4FC7B8; /* @kind color */
+--zh-secondary-pressed: #3AAD9F; /* @kind color */
+--zh-on-secondary: #062E2A; /* @kind color */
+--zh-secondary-container: #0D3F3A; /* @kind color */
+--zh-on-secondary-container: #C8F0EA; /* @kind color */
+
+--zh-tertiary: #F0A060; /* @kind color */
+--zh-tertiary-pressed: #D98A4C; /* @kind color */
+--zh-on-tertiary: #3D1D05; /* @kind color */
+--zh-tertiary-container: #4A2A12; /* @kind color */
+--zh-on-tertiary-container: #FBDCC4; /* @kind color */
+
+--zh-disabled-fill: #2A2D31; /* @kind color */
+--zh-disabled-label: #5F656C; /* @kind color */
+--zh-disabled-border: #3A3E44; /* @kind color */
+
+--zh-background: #0B1118; /* @kind color */
+--zh-surface: #151D27; /* @kind color */
+--zh-label: #EAF0F6; /* @kind color */
+--zh-label-secondary: #9AA8B8; /* @kind color */
+--zh-separator: #2A3441; /* @kind color */
+}

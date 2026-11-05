@@ -1,0 +1,60 @@
+<!-- @dsCard group="Components" viewport="700x340" name="Home Screen" subtitle="Control Center — 1×1, 2×1, 2×2 controls and sliders over wallpaper" -->
+<!DOCTYPE html><html><head><meta charset="utf-8"><link rel="stylesheet" href="../../styles.css">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,BlinkMacSystemFont,"SF Pro",system-ui,sans-serif;background:rgb(245,245,245);display:flex;justify-content:center;padding:12px}
+.cc{position:relative;width:402px;height:538px;overflow:hidden;border-radius:40px;zoom:0.6;background:url(../../assets/wallpaper-ios26.jpg) center/cover}
+.ov{position:absolute;inset:0;background:rgba(0,0,0,0.5);backdrop-filter:blur(24px)}
+.p{position:absolute;background:rgb(36,36,36);overflow:hidden}
+.c1{width:70px;height:70px;border-radius:100px}
+.sym{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-family:"SF Pro",-apple-system,system-ui,sans-serif;color:#fff}
+.m{position:absolute;-webkit-mask:var(--u) center/contain no-repeat;mask:var(--u) center/contain no-repeat}
+.t{position:absolute;font-size:15px;line-height:20px;letter-spacing:-0.24px;font-weight:590;color:#fff}
+.d{color:rgba(235,235,245,0.6);font-weight:400}
+</style></head><body>
+<div class="cc">
+<div class="ov"></div>
+<!-- shifted up by 112 from Figma frame -->
+<div class="p" style="left:37px;top:20px;width:155px;height:155px;border-radius:30px">
+<div class="p c1" style="left:12px;top:12px;width:62px;height:62px;background:rgba(255,255,255,0.06)"><div class="sym" style="font-size:24px">􀑪</div></div>
+<div class="p c1" style="left:81px;top:12px;width:62px;height:62px;background:rgba(255,255,255,0.06)"><div class="sym" style="font-size:22px">􀖀</div></div>
+<div class="p c1" style="left:12px;top:81px;width:62px;height:62px;background:rgb(0,145,255)"><img src="../../assets/control-center/wifi.svg" style="position:absolute;left:19px;top:22px;width:24px;height:18px;filter:brightness(0) invert(1)"></div>
+<div class="p c1" style="left:85px;top:84px;width:26px;height:26px;background:rgb(52,199,89)"><img src="../../assets/control-center/cellular.svg" style="position:absolute;left:6px;top:7px;width:14px;height:11px;filter:brightness(0) invert(1)"></div>
+<div class="p c1" style="left:117px;top:84px;width:26px;height:26px;background:rgb(0,145,255)"><div class="sym" style="font-size:12px">􀖀</div></div>
+</div>
+<div class="p" style="left:209px;top:20px;width:155px;height:155px;border-radius:30px">
+<div class="p" style="left:13px;top:13px;width:54px;height:54px;border-radius:14px;background:rgba(255,255,255,0.06)"></div>
+<div class="t" style="left:14px;top:76px">Track<br><span class="d">Artist</span></div>
+<div class="sym" style="top:auto;bottom:16px;height:30px;gap:26px;font-size:20px">◀◀ <span style="font-size:26px">▶</span> ▶▶</div>
+</div>
+<div class="p c1" style="left:37px;top:191px"><div class="sym" style="font-size:24px">􀌟</div></div>
+<div class="p c1" style="left:122px;top:191px;background:rgb(198,198,200)"><div class="sym" style="font-size:19px;font-weight:700;color:rgb(255,56,60);opacity:0.9">􀋞</div></div>
+<div class="p" style="left:209px;top:191px;width:70px;height:155px;border-radius:34px">
+<div style="position:absolute;left:0;right:0;bottom:0;height:112px;background:rgb(153,153,153);border-radius:34px"></div>
+<i class="m" style="--u:url(../../assets/control-center/sun-rays.svg);left:21px;top:107px;width:27px;height:27px;background:rgb(255,204,0)"></i>
+<i class="m" style="--u:url(../../assets/control-center/sun-core.svg);left:29px;top:115px;width:11px;height:11px;background:rgb(255,204,0)"></i>
+</div>
+<div class="p" style="left:294px;top:191px;width:70px;height:155px;border-radius:34px">
+<div style="position:absolute;left:0;right:0;bottom:0;height:56px;background:rgb(153,153,153);border-radius:34px"></div>
+<i class="m" style="--u:url(../../assets/control-center/volume-speaker.svg);left:20px;top:109px;width:15.5px;height:23px;background:rgb(0,192,232)"></i>
+<i class="m" style="--u:url(../../assets/control-center/volume-waves.svg);left:40px;top:111px;width:10px;height:19px;background:rgb(0,192,232)"></i>
+</div>
+<div class="p" style="left:37px;top:277px;width:155px;height:70px;border-radius:100px">
+<div class="p c1" style="left:10px;top:10px;width:50px;height:50px;background:rgba(255,255,255,0.06)"><div class="sym" style="font-size:20px">􀆺</div></div>
+<div class="t" style="left:68px;top:15px">Title<br><span class="d">Detail</span></div>
+</div>
+<div class="p" style="left:37px;top:363px;width:155px;height:155px;border-radius:30px">
+<div class="p c1" style="left:12px;top:12px;width:40px;height:40px;background:rgba(255,255,255,0.06)"><div class="sym" style="font-size:18px">􀛮</div></div>
+<div class="t" style="left:16px;top:107px">Title<br><span class="d">Detail</span></div>
+</div>
+<div class="p c1" style="left:209px;top:363px"><div class="sym" style="font-size:32px;font-weight:510">􀑚</div></div>
+<div class="p c1" style="left:294px;top:363px">
+<img src="../../assets/control-center/screen-share-back.svg" style="position:absolute;left:19.7px;top:22.2px;width:25.26px;height:20.17px;filter:brightness(0) invert(0.25)">
+<img src="../../assets/control-center/screen-share-front.svg" style="position:absolute;left:26px;top:28.2px;width:25.26px;height:20.17px;filter:brightness(0) invert(1)">
+</div>
+<div class="p c1" style="left:209px;top:448px">
+<img src="../../assets/control-center/battery-outline.svg" style="position:absolute;left:16.8px;top:26.4px;width:37.5px;height:17.7px;filter:brightness(0) invert(1);opacity:0.5">
+<img src="../../assets/control-center/battery-fill.svg" style="position:absolute;left:21.3px;top:30.9px;width:18.1px;height:8.8px;filter:brightness(0) invert(1)">
+</div>
+</div>
+</body></html>

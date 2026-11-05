@@ -1,0 +1,33 @@
+<!-- @dsCard group="Colors" viewport="960x560" name="ZhareHub Brand Palette" subtitle="Primary, Secondary, Tertiary, Disabled — light and dark" -->
+<!DOCTYPE html><html><head><link rel="stylesheet" href="../styles.css"><style>
+body{margin:0;font-family:'Zoho Puvi','SF Pro',-apple-system,BlinkMacSystemFont,system-ui,sans-serif}
+.wrap{display:grid;grid-template-columns:1fr 1fr}
+.panel{padding:24px;background:var(--zh-background);color:var(--zh-label);display:flex;flex-direction:column;gap:14px}
+.mode{font-size:13px;font-weight:600;color:var(--zh-label-secondary);letter-spacing:.02em;text-transform:uppercase}
+.row{display:grid;grid-template-columns:84px 1fr 1fr;gap:10px;align-items:stretch}
+.name{font-size:14px;font-weight:600;align-self:center}
+.sw{border-radius:12px;padding:12px;display:flex;flex-direction:column;gap:4px;min-height:58px;box-sizing:border-box}
+.sw b{font-size:15px;font-weight:600}
+.sw span{font-size:11px;font-family:'SF Mono',ui-monospace,monospace;opacity:.9}
+.btns{display:flex;gap:8px;flex-wrap:wrap;padding-top:6px;border-top:1px solid var(--zh-separator)}
+.btn{height:36px;padding:0 16px;border-radius:100px;font-size:15px;font-weight:600;display:flex;align-items:center;border:1px solid transparent}
+</style></head><body>
+<div class="wrap">
+<div class="panel light">
+<div class="mode">Light</div>
+<div class="row"><div class="name">Primary</div><div class="sw" style="background:var(--zh-primary);color:var(--zh-on-primary)"><b>Primary</b><span>#226DB4</span></div><div class="sw" style="background:var(--zh-primary-container);color:var(--zh-on-primary-container)"><b>Container</b><span>#E3EEF9</span></div></div>
+<div class="row"><div class="name">Secondary</div><div class="sw" style="background:var(--zh-secondary);color:var(--zh-on-secondary)"><b>Secondary</b><span>#0E7C72</span></div><div class="sw" style="background:var(--zh-secondary-container);color:var(--zh-on-secondary-container)"><b>Container</b><span>#DDF3F0</span></div></div>
+<div class="row"><div class="name">Tertiary</div><div class="sw" style="background:var(--zh-tertiary);color:var(--zh-on-tertiary)"><b>Tertiary</b><span>#AD5615</span></div><div class="sw" style="background:var(--zh-tertiary-container);color:var(--zh-on-tertiary-container)"><b>Container</b><span>#FBE9DB</span></div></div>
+<div class="row"><div class="name">Disabled</div><div class="sw" style="background:var(--zh-disabled-fill);color:var(--zh-disabled-label)"><b>Fill / Label</b><span>#E4E7EB / #A1A8B0</span></div><div class="sw" style="background:var(--zh-background);border:1px solid var(--zh-disabled-border);color:var(--zh-disabled-label)"><b>Border</b><span>#D3D8DE</span></div></div>
+<div class="btns"><div class="btn" style="background:var(--zh-primary);color:var(--zh-on-primary)">Primary</div><div class="btn" style="background:var(--zh-secondary);color:var(--zh-on-secondary)">Secondary</div><div class="btn" style="background:var(--zh-tertiary-container);color:var(--zh-on-tertiary-container)">Tertiary</div><div class="btn" style="background:var(--zh-disabled-fill);color:var(--zh-disabled-label)">Disabled</div></div>
+</div>
+<div class="panel dark">
+<div class="mode">Dark</div>
+<div class="row"><div class="name">Primary</div><div class="sw" style="background:var(--zh-primary);color:var(--zh-on-primary)"><b>Primary</b><span>#5FA8EE</span></div><div class="sw" style="background:var(--zh-primary-container);color:var(--zh-on-primary-container)"><b>Container</b><span>#123A61</span></div></div>
+<div class="row"><div class="name">Secondary</div><div class="sw" style="background:var(--zh-secondary);color:var(--zh-on-secondary)"><b>Secondary</b><span>#4FC7B8</span></div><div class="sw" style="background:var(--zh-secondary-container);color:var(--zh-on-secondary-container)"><b>Container</b><span>#0D3F3A</span></div></div>
+<div class="row"><div class="name">Tertiary</div><div class="sw" style="background:var(--zh-tertiary);color:var(--zh-on-tertiary)"><b>Tertiary</b><span>#F0A060</span></div><div class="sw" style="background:var(--zh-tertiary-container);color:var(--zh-on-tertiary-container)"><b>Container</b><span>#4A2A12</span></div></div>
+<div class="row"><div class="name">Disabled</div><div class="sw" style="background:var(--zh-disabled-fill);color:var(--zh-disabled-label)"><b>Fill / Label</b><span>#2A2D31 / #5F656C</span></div><div class="sw" style="background:var(--zh-background);border:1px solid var(--zh-disabled-border);color:var(--zh-disabled-label)"><b>Border</b><span>#3A3E44</span></div></div>
+<div class="btns"><div class="btn" style="background:var(--zh-primary);color:var(--zh-on-primary)">Primary</div><div class="btn" style="background:var(--zh-secondary);color:var(--zh-on-secondary)">Secondary</div><div class="btn" style="background:var(--zh-tertiary-container);color:var(--zh-on-tertiary-container)">Tertiary</div><div class="btn" style="background:var(--zh-disabled-fill);color:var(--zh-disabled-label)">Disabled</div></div>
+</div>
+</div>
+</body></html>

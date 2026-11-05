@@ -1,0 +1,29 @@
+<!-- @dsCard group="Components" viewport="1100x640" name="Widgets" subtitle="Home Screen widgets (S/M/L) and Lock Screen circular, rectangular, inline and clock widgets" -->
+<!DOCTYPE html><html><head><meta charset="utf-8"><link rel="stylesheet" href="../../styles.css">
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="../../_ds_bundle.js"></script>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:"Zoho Puvi","SF Pro",-apple-system,system-ui,sans-serif;background:rgb(245,245,245);color:rgb(26,26,26)}
+#root{display:flex;flex-direction:column;gap:20px;padding:24px}
+.lbl{font-size:12px;font-weight:600;letter-spacing:.04em;text-transform:uppercase;color:rgba(60,60,67,.6)}
+.row{display:flex;gap:20px;align-items:flex-start;flex-wrap:wrap}
+.ls{position:relative;border-radius:22px;overflow:hidden;background:url(../../assets/wallpaper-ios26.jpg) center/cover;padding:24px;display:flex;flex-direction:column;gap:20px}
+.ls::before{content:"";position:absolute;inset:0;background:rgba(0,0,0,.35)}
+.ls>*{position:relative}
+.cell{display:flex;flex-direction:column;gap:6px;align-items:flex-start}
+</style></head><body><div id="root"></div>
+<script>
+const NS=window.ZhareHubDesignSystem_d00ac0||{};const h=React.createElement;
+const W=(n,p)=>NS[n]?h(NS[n],Object.assign({key:n},p||{})):null;
+const sec=(t,kids,cls)=>h('div',{className:cls||'',style:cls?null:{display:'flex',flexDirection:'column',gap:12}},h('div',{className:'lbl',style:cls?{color:'rgba(255,255,255,.75)'}:null},t),...kids);
+ReactDOM.createRoot(document.getElementById('root')).render(h(React.Fragment,null,
+sec('Home Screen widget — iPhone',[h('div',{className:'row',style:{zoom:.55}},W('HomeScreenWidgetIPhone',{size:'sm',key:'s'}),W('HomeScreenWidgetIPhone',{size:'md',key:'m'}),W('HomeScreenWidgetIPhone',{size:'lg',key:'l'}))]),
+sec('Lock Screen widgets',[
+h('div',{className:'row',key:'c',style:{gap:16,alignItems:'center'}},...['LockScreenWidgetCircularOpen','LockScreenWidgetCircularOpen2','LockScreenWidgetCircularStack','LockScreenWidgetCircularIcon','LockScreenWidgetCircularStack2','LockScreenWidgetCircularStack3','LockScreenWidgetCircularOpen3','LockScreenWidgetCircularClosed','LockScreenWidgetClock'].map(n=>W(n))),
+h('div',{className:'row',key:'r',style:{gap:24}},...['LockScreenWidgetModularList','LockScreenWidgetModularStandard','LockScreenWidgetRectangularWith','LockScreenWidgetTallBody','LockScreenWidgetModularColumns','LockScreenWidgetTallBody2','LockScreenWidgetRectangularText','LockScreenWidgetModularWith','LockScreenWidgetModularTable'].map(n=>W(n))),
+h('div',{className:'row',key:'i'},W('LockScreenWidgetInline'))
+],'ls')
+));
+</script></body></html>

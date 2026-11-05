@@ -1,0 +1,23 @@
+<!-- @dsCard group="Components" viewport="700x300" name="Page Dots (Animated)" subtitle="Page dots transitions: Default and Stretch & shrink. Tap a dot or let it auto-advance" -->
+<!DOCTYPE html><html data-theme="light"><head><meta charset="utf-8"><link rel="stylesheet" href="../../styles.css">
+<style>*{margin:0;padding:0;box-sizing:border-box}body{font-family:"Zoho Puvi","SF Pro",-apple-system,system-ui,sans-serif;background:rgb(245,245,245);padding:16px}#root{display:grid;grid-template-columns:1fr 1fr;gap:12px}.cell{display:flex;flex-direction:column;gap:6px;min-width:0}.tile{background:#fff;border-radius:16px;padding:20px 12px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:18px;min-height:112px}.lbl{font-size:11px;color:rgba(60,60,67,0.6);text-align:center}</style>
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="../../_ds_bundle.js"></script>
+</head><body><div id="root"></div>
+<script>
+const{PageDotsAnimated:PageDots}=window.ZhareHubDesignSystem_d00ac0||{};const h=React.createElement;
+function Demo({animation,label,wrap}){
+  const[i,setI]=React.useState(0);const[dir,setDir]=React.useState(1);const n=4;
+  React.useEffect(()=>{const t=setTimeout(()=>{if(wrap){setI((i+1)%n);return}let d=dir;if(i+d<0||i+d>=n)d=-d;setDir(d);setI(i+d)},1400);return()=>clearTimeout(t)},[i,dir]);
+  if(!PageDots)return null;
+  return h('div',{className:'cell'},h('div',{className:'tile'},
+    h(PageDots,{count:n,current:i,onChange:setI,animation}),
+    h(PageDots,{count:n,current:i,onChange:setI,animation,tint:'brand'}),
+    h(PageDots,{count:n,current:i,onChange:setI,animation,platter:true})
+  ),h('div',{className:'lbl'},label));
+}
+ReactDOM.createRoot(document.getElementById('root')).render(h(React.Fragment,null,
+  h(Demo,{animation:'default',label:'Default · neutral, brand, platter'}),
+  h(Demo,{animation:'stretch',wrap:true,label:'Stretch & shrink · neutral, brand, platter'})));
+</script></body></html>

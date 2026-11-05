@@ -1,0 +1,12 @@
+<!-- @dsCard group="Components" viewport="1000x720" name="Examples/Sidebar" subtitle="iPad sidebar example — Type=List and Type=List (Multi-level)" -->
+<!DOCTYPE html><html data-theme="light"><head><meta charset="utf-8"><link rel="stylesheet" href="../../styles.css">
+<style>*{margin:0;padding:0;box-sizing:border-box}html,body{background:rgb(245,245,245);overflow:hidden}#frame{position:absolute;left:0;top:0;width:1370px;height:2000px;transform-origin:0 0}.v{position:absolute;left:80px}</style>
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="../../_ds_bundle.js"></script>
+</head><body><div id="frame"></div>
+<script>
+const{ExamplesSidebar}=window.ZhareHubDesignSystem_d00ac0||{};const h=React.createElement;
+const fit=()=>{document.getElementById('frame').style.transform='scale('+Math.min(innerWidth/1370,innerHeight/2000)+')'};fit();addEventListener('resize',fit);
+ReactDOM.createRoot(document.getElementById('frame')).render(h(React.Fragment,null,[[80,'list'],[1050,'list (multi-level)']].map(([y,t])=>h('div',{key:t,className:'v',style:{top:y}},ExamplesSidebar?h(ExamplesSidebar,{type:t}):null))));
+</script></body></html>

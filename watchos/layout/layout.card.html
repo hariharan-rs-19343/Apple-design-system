@@ -1,0 +1,13 @@
+<!-- @dsCard group="watchOS" viewport="1400x1000" name="watchOS · Layout Grids" subtitle="35 components from the watchOS 26 kit" -->
+<!DOCTYPE html><html><head><meta charset="utf-8"><link rel="stylesheet" href="../../styles.css">
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="../../_ds_bundle.js"></script>
+<style>*{margin:0;padding:0;box-sizing:border-box}body{font-family:"SF Compact","Zoho Puvi",-apple-system,system-ui,sans-serif;background:#111;color:#fff}#root{padding:24px;display:flex;flex-wrap:wrap;gap:28px;align-items:flex-start}.cell{display:flex;flex-direction:column;gap:10px}.lbl{font-size:11px;color:rgba(255,255,255,0.6);letter-spacing:0.2px}.stage{background:#000;border-radius:12px;padding:12px;display:flex;align-items:flex-start;justify-content:flex-start}</style>
+</head><body><div id="root"></div>
+<script>
+const NS=window.ZhareHubDesignSystem_d00ac0||{};const h=React.createElement;
+class Safe extends React.Component{constructor(p){super(p);this.state={e:null}}static getDerivedStateFromError(e){return{e}}render(){return this.state.e?h('div',{className:'lbl'},'render error'):this.props.children}}
+const items=["WatchDisplayMask40mm","WatchDisplayMask42mm","WatchDisplayMask44mm","WatchDisplayMask46mm","WatchDisplayMask49mm","WatchGrid40mmDialBased","WatchGrid40mmFoundation","WatchGrid40mmInfographic","WatchGrid40mmList","WatchGrid40mmPinnedPillButton","WatchGrid40mmThreeBottomButtons","WatchGrid42mmDialBased","WatchGrid42mmFoundation","WatchGrid42mmInfographic","WatchGrid42mmList","WatchGrid42mmPinnedPillButton","WatchGrid42mmThreeBottomButtons","WatchGrid44mmDialBased","WatchGrid44mmFoundation","WatchGrid44mmInfographic","WatchGrid44mmList","WatchGrid44mmPinnedPillButton","WatchGrid44mmThreeBottomButtons","WatchGrid46mmDialBased","WatchGrid46mmFoundation","WatchGrid46mmInfographic","WatchGrid46mmList","WatchGrid46mmPinnedPillButton","WatchGrid46mmThreeBottomButtons","WatchGrid49mmDialBased","WatchGrid49mmFoundation","WatchGrid49mmInfographic","WatchGrid49mmList","WatchGrid49mmPinnedPillButton","WatchGrid49mmThreeBottomButtons"];
+ReactDOM.createRoot(document.getElementById('root')).render(h(React.Fragment,null,...items.filter(n=>NS[n]).map(n=>h('div',{className:'cell',key:n},h('div',{className:'lbl'},n),h('div',{className:'stage'},h(Safe,null,h(NS[n])))))));
+</script></body></html>

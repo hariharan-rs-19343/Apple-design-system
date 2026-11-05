@@ -1,0 +1,4 @@
+/* macOS platform overrides. Same visual language as iOS; shape changes listed here. */
+:root {
+--mac-ios-button-radius: 8px; /* @kind radius */
+}

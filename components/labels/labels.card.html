@@ -1,0 +1,44 @@
+<!-- @dsCard group="Components" viewport="700x320" name="Labels &amp; Headers" subtitle="Activity-view header (light/dark), labels, descriptions, trailing accessories, card top" -->
+<!DOCTYPE html><html><head><meta charset="utf-8"><link rel="stylesheet" href="../../styles.css">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:"SF Pro",-apple-system,BlinkMacSystemFont,system-ui,sans-serif;background:rgb(245,245,245);padding:14px;min-height:100vh}
+.sf{font-family:"SF Pro",-apple-system,system-ui,sans-serif}
+.lbl{font-size:11px;color:rgba(60,60,67,0.6);text-align:center;margin-top:6px}
+.hdrs{display:grid;grid-template-columns:1fr 1fr;gap:12px;background:rgb(170,170,170);border-radius:16px;padding:6px;zoom:0.83}
+.h{width:402px;display:flex;gap:16px;padding:16px;align-items:flex-start}
+.th{width:76px;padding:14px 12px;display:flex;justify-content:center;flex-shrink:0}
+.th i{width:64px;height:64px;border-radius:16px;background:url(../../assets/header-thumbnail.png) center/cover;box-shadow:inset 0 0 0 0.5px rgba(0,0,0,0.15),0 2px 16px rgba(0,0,0,0.15)}
+.mid{flex:1;display:flex;flex-direction:column;gap:12px;padding:12px 0 2px;align-items:flex-start;min-width:0}
+.ts{display:flex;flex-direction:column;gap:1px}
+.t{font-size:15px;font-weight:510;line-height:20px;letter-spacing:-0.23px}
+.s{font-size:13px;line-height:18px;letter-spacing:-0.08px;color:rgb(138,138,138)}
+.menu{height:34px;border-radius:1000px;padding:6px 10px 6px 14px;display:flex;align-items:center;gap:4px;font-size:15px;font-weight:510;line-height:18px}
+.sec{display:flex;gap:4px;font-size:15px;line-height:18px;letter-spacing:-0.08px;color:rgb(138,138,138);white-space:nowrap}
+.x{width:44px;height:44px;border-radius:296px;display:flex;align-items:center;justify-content:center;font-size:17px;font-weight:510;flex-shrink:0;box-shadow:0 8px 40px rgba(0,0,0,0.12)}
+.L .t{color:rgb(26,26,26)}.L .menu{background:rgb(247,247,247);color:rgb(26,26,26);box-shadow:0 8px 40px rgba(0,0,0,0.12),inset 0 1px 1px rgba(255,255,255,0.9)}.L .menu .ch{color:rgb(114,114,114)}.L .x{background:rgb(247,247,247);color:rgb(26,26,26)}.L .sec .ch{color:rgb(191,191,191)}
+.D .t{color:rgb(245,245,245)}.D .menu{background:rgb(64,64,64);color:rgb(245,245,245);box-shadow:0 8px 40px rgba(0,0,0,0.12)}.D .menu .ch{color:rgb(138,138,138)}.D .x{background:rgb(64,64,64);color:rgb(245,245,245)}.D .sec .ch{color:rgb(245,245,245)}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:12px}
+.tile{background:#fff;border-radius:14px;min-height:72px;display:flex;align-items:center;justify-content:center;gap:16px;padding:10px}
+.tile.dk{background:#000}
+.lb{font-size:17px;line-height:20px;letter-spacing:-0.43px}
+.desc{font-size:13px;line-height:18px;letter-spacing:-0.08px}
+.acc{display:flex;align-items:center;gap:16px;font-size:17px;font-weight:590;color:rgb(0,136,255)}
+.acc .im{width:28px;height:28px;border-radius:6px;background:url(../../assets/header-thumbnail.png) center/cover}
+.acc .btn{height:28px;padding:0 12px;border-radius:100px;background:rgba(120,120,128,0.12);font-size:15px;display:flex;align-items:center}
+.ct{width:100%;display:flex;flex-direction:column;gap:8px;align-items:center}
+.ct i{width:100%;max-width:180px;height:10px;border-radius:10px 10px 0 0}
+</style></head><body>
+<div class="hdrs">
+<div class="h L"><div class="th"><i></i></div><div class="mid"><div class="ts"><span class="t">Title</span><span class="s">Subtitle</span></div><span class="menu"><span class="sf">􀉬</span>Label<span class="sf ch">􀆊</span></span><span class="sec">Only invited people can edit.<span class="sf ch">􀆊</span></span></div><span class="x sf">􀆄</span></div>
+<div class="h D"><div class="th"><i></i></div><div class="mid"><div class="ts"><span class="t">Title</span><span class="s">Subtitle</span></div><span class="menu"><span class="sf">􀉬</span>Label<span class="sf ch">􀆊</span></span><span class="sec">Only invited people can edit.<span class="sf ch">􀆊</span></span></div><span class="x sf">􀆄</span></div>
+</div>
+<div class="lbl">Header · Light / Dark</div>
+<div class="grid">
+<div><div class="tile"><span class="lb" style="color:rgb(0,0,0)">Label</span><span class="lb" style="color:rgb(255,56,60)">Label</span><span class="lb" style="color:rgba(60,60,67,0.3)">Label</span></div><div class="lbl">Label · Default / Destructive / Disabled</div></div>
+<div><div class="tile"><span class="desc" style="color:rgb(0,0,0)">Description</span><span class="desc" style="color:rgba(127,127,127,0.5)">Description</span></div><div class="lbl">Description · Light / Dark elevated</div></div>
+<div><div class="tile"><div class="ct"><i style="background:rgba(0,0,0,0.12)"></i><i style="background:rgba(0,0,0,0.3)"></i></div></div><div class="lbl">Card top · Light / Dark</div></div>
+<div style="grid-column:span 2"><div class="tile"><div class="acc"><span class="sf">􀆈</span><span class="sf">􀍠</span><span class="im"></span><span class="btn">Button</span></div></div><div class="lbl">Header trailing accessories · Disclosure open / Action / Image / Button</div></div>
+<div><div class="tile dk"><span class="lb" style="color:#fff">Label</span><span class="lb" style="color:rgb(255,66,69)">Label</span></div><div class="lbl">Label · Dark</div></div>
+</div>
+</body></html>

@@ -1,0 +1,39 @@
+<!-- @dsCard group="Components" viewport="700x200" name="Sliders" subtitle="Interactive slider — drag the knob; min/max symbols, ticks, separators" -->
+<!DOCTYPE html><html><head><meta charset="utf-8"><link rel="stylesheet" href="../../styles.css">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,BlinkMacSystemFont,"SF Pro",system-ui,sans-serif;background:rgb(245,245,245);padding:16px;display:flex;justify-content:center;gap:20px}
+.col{width:400px}
+.row{height:52px;padding:0 16px 1px;display:flex;flex-direction:column}
+.sep{height:0.5px;background:rgba(60,60,67,0.12);flex-shrink:0}
+.in{flex:1;display:flex;gap:12px;align-items:flex-start}
+.sym{font-family:"SF Pro",-apple-system,system-ui,sans-serif;font-weight:590;font-size:17px;line-height:22px;color:rgba(60,60,67,0.6);padding-top:14px;width:28px;text-align:center}
+.stack{position:relative;flex:1;height:100%;touch-action:none;cursor:pointer}
+.track{position:absolute;left:0;right:0;top:22px;height:6px;border-radius:3px;background:rgba(120,120,120,0.2)}
+.fill{position:absolute;left:0;top:22px;height:6px;border-radius:3px;background:rgb(0,136,255)}
+.ticks{position:absolute;left:16px;right:16px;top:32px;height:4px;display:flex;justify-content:space-between}
+.ticks i{width:4px;height:4px;border-radius:50%;background:rgba(120,120,120,0.2)}
+.knob{position:absolute;top:13px;width:38px;height:24px;margin-left:-19px;border-radius:100px;background:#fff;box-shadow:0 0.5px 4px 0 rgba(0,0,0,0.12),0 6px 13px 0 rgba(0,0,0,0.12);cursor:grab}
+.val{font-size:11px;color:rgba(60,60,67,0.6);text-align:right;padding:4px 16px 0}
+</style></head><body>
+<div class="col" id="col"></div>
+<script>
+const col=document.getElementById('col');
+const init=[0,25,50];
+init.forEach((v,i)=>{
+  if(i===0){const s=document.createElement('div');s.className='sep';s.style.margin='0 16px';col.appendChild(s);}
+  const row=document.createElement('div');row.className='row';
+  row.innerHTML=`<div class="in"><div class="sym">􀓑</div><div class="stack"><div class="track"></div><div class="fill"></div><div class="ticks"><i></i><i></i><i></i><i></i><i></i></div><div class="knob"></div></div><div class="sym">􀓏</div></div>`;
+  col.appendChild(row);
+  const sep=document.createElement('div');sep.className='sep';sep.style.margin='0 16px';col.appendChild(sep);
+  const stack=row.querySelector('.stack'),fill=row.querySelector('.fill'),knob=row.querySelector('.knob');
+  // knob centre travels inside the track inset by half the knob width
+  const set=p=>{p=Math.max(0,Math.min(100,p));const w=stack.clientWidth,x=19+(w-38)*p/100;knob.style.left=x+'px';fill.style.width=(p===0?0:x)+'px';};
+  set(v);
+  const move=e=>{const r=stack.getBoundingClientRect();set((e.clientX-r.left-19)/(r.width-38)*100);};
+  stack.addEventListener('pointerdown',e=>{stack.setPointerCapture(e.pointerId);move(e);stack.onpointermove=move;});
+  stack.addEventListener('pointerup',()=>{stack.onpointermove=null;});
+  window.addEventListener('resize',()=>set(v));
+});
+</script>
+</body></html>

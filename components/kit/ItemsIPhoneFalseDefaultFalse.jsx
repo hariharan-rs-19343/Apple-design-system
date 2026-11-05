@@ -1,0 +1,48 @@
+import { Label } from '../labels/Label.jsx';
+import { ShortcutsSubmenuLight } from './ShortcutsSubmenuLight.jsx';
+import { Symbol } from '../tab-bars/Symbol.jsx';
+
+// figma node: 548:43751 _Items/iPhone/False/Default/False/Light
+export function ItemsIPhoneFalseDefaultFalse(_p = {}) {
+  const props = { ..._p, showCheckmark: _p.showCheckmark ?? true, showSymbol: _p.showSymbol ?? true, showTrailing: _p.showTrailing ?? true, subtitle: _p.subtitle ?? "Subtitle", label: _p.label ?? "Label", showSubtitle: _p.showSubtitle ?? true, symbol: _p.symbol ?? "􀓔" };
+  return (
+    <div className={props.className} style={{
+      width: 160,
+      minHeight: 42,
+      display: "flex",
+      flexDirection: "row",
+      gap: 4,
+      alignItems: "center",
+      flexWrap: "nowrap",
+      position: "relative",
+      ...props.style,
+    }}>
+      <div style={{
+          position: "relative",
+          width: 28,
+          height: 22,
+          flexShrink: 0,
+        }}>{props.icon1 ?? <Symbol state={"default"} mode={"light"} />}</div>
+      <Label
+        style={{
+          position: "relative",
+          height: 39,
+          flexGrow: 1,
+          width: "auto",
+        }}
+        state={"default"}
+        mode={"light"}
+      />
+      {props.showTrailing && (
+      <div style={{
+          position: "relative",
+          width: 14,
+          flexShrink: 0,
+          alignSelf: "stretch",
+          height: "auto",
+        }}>{props.icon2 ?? <ShortcutsSubmenuLight />}</div>
+      )}
+    </div>
+  );
+}
+export default ItemsIPhoneFalseDefaultFalse;

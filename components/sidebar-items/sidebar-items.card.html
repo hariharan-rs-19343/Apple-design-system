@@ -1,0 +1,77 @@
+<!-- @dsCard group="Components" viewport="700x420" name="Sidebar Items" subtitle="iPad sidebar — search, section header, rows (indent 0–2, selected, disabled), trailing accessories, edit buttons" -->
+<!DOCTYPE html><html><head><meta charset="utf-8"><link rel="stylesheet" href="../../styles.css">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:"SF Pro",-apple-system,BlinkMacSystemFont,system-ui,sans-serif;background:rgb(245,245,245);padding:16px;display:flex;gap:16px;justify-content:center;align-items:flex-start}
+.sf{font-family:"SF Pro",-apple-system,system-ui,sans-serif}
+.side{width:320px;border-radius:26px;padding:12px 0 10px;display:flex;flex-direction:column;align-items:center;flex-shrink:0}
+.side.l{background:rgb(255,255,255)}
+.side.d{background:rgb(28,28,30)}
+.tb{width:100%;height:44px;display:flex;align-items:center;justify-content:space-between;padding:0 18px}
+.tb .sf{font-size:17px;font-weight:510;line-height:1}
+.tb .ed{font-size:17px;line-height:22px}
+.l .tb{color:rgb(26,26,26)}.d .tb{color:rgb(245,245,245)}
+.search{width:296px;height:44px;border-radius:100px;padding:11px;display:flex;align-items:center;gap:8px;font-size:17px;line-height:22px;margin:4px 0 8px}
+.l .search{background:rgba(120,120,128,0.12);color:rgb(138,138,138)}
+.d .search{background:rgba(120,120,128,0.24);color:rgb(138,138,138)}
+.search .mic{margin-left:auto}
+.sh{width:300px;height:44px;display:flex;align-items:center;justify-content:space-between;padding:0 10px;font-size:17px;line-height:22px}
+.l .sh{color:rgba(60,60,67,0.6)}.d .sh{color:rgba(235,235,245,0.6)}
+.sh .r{display:flex;gap:8px;align-items:center}
+.sh .ch{width:18px;height:18px;display:flex;align-items:center;justify-content:center;font-size:15px;font-weight:590}
+.l .sh .ch{color:rgb(0,136,255)}.d .sh .ch{color:rgb(0,145,255)}
+.row{width:304px;height:44px;border-radius:100px;display:flex;align-items:center;gap:8px;padding:0 8px 0 10px}
+.row.i1{padding-left:30px}.row.i2{padding-left:50px}
+.ic{width:21px;height:21px;display:flex;align-items:center;justify-content:center;font-size:17px;line-height:1;flex-shrink:0}
+.l .ic{color:rgb(0,136,255)}.d .ic{color:rgb(0,145,255)}
+.tt{flex:1;font-size:17px;line-height:22px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.l .tt{color:rgb(0,0,0)}.d .tt{color:rgb(255,255,255)}
+.det{font-size:17px;font-weight:510;line-height:22px;color:rgb(138,138,138);display:flex;align-items:center;gap:8px}
+.disc{width:18px;height:18px;display:flex;align-items:center;justify-content:center;font-size:15px;font-weight:590}
+.l .disc{color:rgb(26,26,26)}.d .disc{color:rgb(245,245,245)}
+.disc.open{transform:rotate(90deg)}
+.l .row.sel{background:rgb(237,237,237)}
+.d .row.sel{background:rgb(18,18,18)}
+.row.sel .tt{font-weight:590}
+.l .row.sel .tt,.l .row.sel .ic{color:rgb(0,136,255)}
+.d .row.sel .tt,.d .row.sel .ic{color:rgb(0,145,255)}
+.row.dis .tt,.row.dis .ic{opacity:0.3}
+.l .row.dis .ic,.d .row.dis .ic{color:rgb(138,138,138)}
+.col{display:flex;flex-direction:column;gap:12px;width:300px}
+.panel{background:#fff;border-radius:20px;padding:6px 0}
+.panel .row{width:100%;border-radius:0;padding:0 16px}.panel .ic{color:rgb(0,136,255)}.panel .tt{color:rgb(0,0,0)}
+.sep{height:0.5px;background:rgba(60,60,67,0.12);margin-left:45px}
+.chk{color:rgb(0,136,255);font-size:17px;font-weight:590}
+.info{color:rgb(0,136,255);font-size:20px}
+.tg{width:64px;height:28px;border-radius:100px;background:rgb(52,199,89);position:relative}
+.tg i{position:absolute;left:23px;top:2px;width:39px;height:24px;border-radius:100px;background:#fff}
+.eb{display:flex;gap:18px;align-items:center;justify-content:center;background:#fff;border-radius:20px;height:56px}
+.e{width:21px;height:21px;border-radius:100px;display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:700;color:#fff}
+.e.sel{background:rgb(0,136,255)}
+.e.del{background:rgb(255,56,60)}
+.e.del i{width:11px;height:2.5px;border-radius:2px;background:#fff}
+.e.off{box-shadow:inset 0 0 0 1.5px rgba(60,60,67,0.3)}
+.lbl{font-size:11px;color:rgba(60,60,67,0.6);text-align:center;margin-top:-6px}
+</style></head><body>
+<div class="side l">
+<div class="tb"><span class="sf">􀏚</span><span class="ed">Edit</span></div>
+<div class="search"><span class="sf">􀊫</span>Search<span class="sf mic">􀊰</span></div>
+<div class="sh"><span>Section Heading</span><span class="r">Detail<span class="ch sf">􀆈</span></span></div>
+<div class="row sel"><span class="ic sf">􀓔</span><span class="tt">Title</span><span class="det">Detail</span></div>
+<div class="row"><span class="ic sf">􀓔</span><span class="tt">Title</span><span class="disc sf open">􀆊</span></div>
+<div class="row i1"><span class="ic sf">􀓔</span><span class="tt">Title</span><span class="disc sf">􀆊</span></div>
+<div class="row i2"><span class="ic sf">􀓔</span><span class="tt">Title</span><span class="det">Detail</span></div>
+<div class="row dis"><span class="ic sf">􀓔</span><span class="tt">Title</span></div>
+</div>
+<div class="col">
+<div class="panel">
+<div class="row"><span class="ic sf">􀓔</span><span class="tt">Detail</span><span class="det">Detail</span></div><div class="sep"></div>
+<div class="row"><span class="ic sf">􀓔</span><span class="tt">Checkmark</span><span class="chk sf">􀆅</span></div><div class="sep"></div>
+<div class="row"><span class="ic sf">􀓔</span><span class="tt">Info</span><span class="info sf">􀅴</span></div><div class="sep"></div>
+<div class="row"><span class="ic sf">􀓔</span><span class="tt">Toggle</span><span class="tg"><i></i></span></div>
+</div>
+<div class="lbl">Trailing accessories</div>
+<div class="eb"><span class="e off"></span><span class="e sel sf">􀆅</span><span class="e del"><i></i></span></div>
+<div class="lbl">Edit buttons · Selectable / Selected / Delete</div>
+</div>
+</body></html>

@@ -1,0 +1,32 @@
+<!-- @dsCard group="Components" viewport="700x420" name="Navigation" subtitle="Top toolbar — Liquid Glass buttons, titles, subtitles, large title" -->
+<!DOCTYPE html><html><head><meta charset="utf-8"><link rel="stylesheet" href="../../styles.css">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,BlinkMacSystemFont,"SF Pro",system-ui,sans-serif;background:rgb(245,245,245);display:flex;justify-content:center;padding:16px}
+.wrap{width:402px;display:flex;flex-direction:column;gap:16px;zoom:0.95}
+.bar{position:relative;height:44px;display:flex;align-items:center;justify-content:space-between;padding:0 16px}
+.g{height:44px;min-width:44px;border-radius:296px;display:flex;align-items:center;justify-content:center;background:rgb(247,247,247);box-shadow:0 8px 40px 0 rgba(0,0,0,0.12),inset 0 1px 1px rgba(255,255,255,0.9)}
+.g.grp{padding:0;gap:0}
+.g.grp .s{width:44px}
+.g.pri{background:rgb(0,136,255);box-shadow:0 8px 40px 0 rgba(0,0,0,0.12)}
+.s{width:44px;height:44px;display:flex;align-items:center;justify-content:center;font-family:"SF Pro",-apple-system,system-ui,sans-serif;font-size:19px;font-weight:510;line-height:1;color:rgb(26,26,26)}
+.pri .s{color:#fff;font-weight:590}
+.ttl{position:absolute;left:0;right:0;top:0;bottom:0;display:flex;flex-direction:column;align-items:center;justify-content:center;pointer-events:none}
+.ttl.left{left:76px;align-items:flex-start}
+.t{font-size:17px;font-weight:590;line-height:22px;letter-spacing:-0.43px;color:rgb(26,26,26)}
+.st{font-size:13px;line-height:16px;letter-spacing:-0.08px;color:rgba(60,60,67,0.6)}
+.trail{display:flex;gap:10px}
+.lt{padding:0 16px}
+.lt .big{font-size:34px;font-weight:700;line-height:41px;letter-spacing:0.4px;color:rgb(26,26,26)}
+.lt .st{font-size:15px;line-height:20px}
+.cl{display:flex;align-items:flex-start;justify-content:space-between;padding:0 16px}
+</style></head><body>
+<div class="wrap">
+<div class="bar"><div class="g"><div class="s">􀆉</div></div><div class="ttl"><div class="t">Title</div></div><div class="g pri"><div class="s">􀄨</div></div></div>
+<div class="bar"><div class="g"><div class="s">􀆉</div></div><div class="ttl"><div class="t">Title</div><div class="st">Subtitle</div></div><div class="g"><div class="s">􀓔</div></div></div>
+<div class="bar"><div class="g"><div class="s">􀆉</div></div><div class="ttl left"><div class="t">Title</div><div class="st">Subtitle</div></div><div class="g"><div class="s">􀓔</div></div></div>
+<div class="bar"><div class="g"><div class="s">􀆉</div></div><div class="trail"><div class="g"><div class="s">􀓔</div></div><div class="g grp"><div class="s">􀓔</div><div class="s">􀓔</div><div class="s">􀓔</div></div></div></div>
+<div class="lt"><div class="big">Title</div><div class="st">Subtitle</div></div>
+<div class="cl"><div class="big" style="font-size:34px;font-weight:700;line-height:41px;color:rgb(26,26,26)">Title</div><div class="g pri"><div class="s">􀄨</div></div></div>
+</div>
+</body></html>

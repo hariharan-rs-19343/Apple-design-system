@@ -1,0 +1,238 @@
+// figma node: 505:43481 _Search Field/Dark (3 variants)
+const __venc = (v) => String(v).replace(/[%|=]/g, encodeURIComponent);
+const __vkey = (p) => "state=" + __venc(p.state);
+
+export function SearchFieldDark(_p = {}) {
+  const props = { ..._p, state: _p.state ?? "placeholder", showText: _p.showText ?? true, searchText: _p.searchText ?? "Search" };
+  const __body0 = () => (
+    <div className={props.className} style={{
+      width: 361,
+      display: "flex",
+      flexDirection: "row",
+      gap: 16,
+      alignItems: "center",
+      flexWrap: "nowrap",
+      position: "relative",
+      ...props.style,
+    }}>
+      <div style={{
+        position: "relative",
+        borderRadius: 10,
+        backgroundColor: "rgba(118,118,128,0.12)",
+        display: "flex",
+        flexDirection: "row",
+        padding: "0px 6px 0px 8px",
+        alignItems: "center",
+        flexWrap: "nowrap",
+        boxSizing: "border-box",
+        flexGrow: 1,
+        alignSelf: "stretch",
+      }}>
+        <span style={{
+          position: "relative",
+          fontFamily: "\"Zoho Puvi\", \"SF Pro\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          fontWeight: 400,
+          fontSize: 17,
+          lineHeight: "22px",
+          color: "rgba(60,60,67,0.6)",
+          flexShrink: 0,
+          whiteSpace: "nowrap",
+        }}>{props.text1 ?? "􀊫"}</span>
+        {props.showText && (
+        <span style={{
+          position: "relative",
+          fontFamily: "\"Zoho Puvi\", \"SF Pro\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          fontWeight: 400,
+          fontSize: 17,
+          whiteSpace: "nowrap",
+          lineHeight: "22px",
+          letterSpacing: "-0.400px",
+          color: "var(--labels-primary)",
+          flexShrink: 0,
+        }}>{props.searchText}</span>
+        )}
+        <div style={{
+          position: "relative",
+          width: 2,
+          height: 23,
+          borderRadius: 2,
+          backgroundColor: "var(--accents-blue)",
+          flexShrink: 0,
+        }} />
+        <span style={{
+          position: "relative",
+          fontFamily: "\"Zoho Puvi\", \"SF Pro\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          fontWeight: 400,
+          fontSize: 17,
+          textAlign: "right",
+          lineHeight: "22px",
+          color: "rgba(60,60,67,0.6)",
+          flexGrow: 1,
+          whiteSpace: "nowrap",
+        }}>{props.text2 ?? "􀁡"}</span>
+      </div>
+      {props.showText && (
+      <span style={{
+        position: "relative",
+        fontFamily: "\"Zoho Puvi\", \"SF Pro\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+        fontWeight: 400,
+        fontSize: 17,
+        textAlign: "center",
+        whiteSpace: "nowrap",
+        lineHeight: "22px",
+        letterSpacing: "-0.400px",
+        color: "var(--accents-blue)",
+        flexShrink: 0,
+        alignSelf: "stretch",
+      }}>{props.text3 ?? "Cancel"}</span>
+      )}
+    </div>
+  );
+  const __body1 = () => (
+    <div className={props.className} style={{
+      width: 361,
+      display: "flex",
+      flexDirection: "row",
+      gap: 16,
+      alignItems: "center",
+      flexWrap: "nowrap",
+      position: "relative",
+      ...props.style,
+    }}>
+      <div style={{
+        position: "relative",
+        borderRadius: 10,
+        backgroundColor: "rgba(118,118,128,0.12)",
+        display: "flex",
+        flexDirection: "row",
+        padding: "0px 6px 0px 8px",
+        alignItems: "center",
+        flexWrap: "nowrap",
+        boxSizing: "border-box",
+        flexGrow: 1,
+        alignSelf: "stretch",
+      }}>
+        <span style={{
+          position: "relative",
+          fontFamily: "\"Zoho Puvi\", \"SF Pro\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          fontWeight: 400,
+          fontSize: 17,
+          lineHeight: "22px",
+          color: "rgba(60,60,67,0.6)",
+          flexShrink: 0,
+          whiteSpace: "nowrap",
+        }}>{props.text1 ?? "􀊫"}</span>
+        <div style={{
+          position: "relative",
+          width: 2,
+          height: 23,
+          borderRadius: 2,
+          backgroundColor: "var(--accents-blue)",
+          flexShrink: 0,
+        }} />
+        {props.showText && (
+        <span style={{
+          position: "relative",
+          fontFamily: "\"Zoho Puvi\", \"SF Pro\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          fontWeight: 400,
+          fontSize: 17,
+          whiteSpace: "nowrap",
+          lineHeight: "22px",
+          letterSpacing: "-0.400px",
+          color: "rgba(60,60,67,0.6)",
+          flexGrow: 1,
+        }}>{props.searchText}</span>
+        )}
+        <span style={{
+          position: "relative",
+          fontFamily: "\"Zoho Puvi\", \"SF Pro\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          fontWeight: 400,
+          fontSize: 17,
+          textAlign: "center",
+          whiteSpace: "nowrap",
+          lineHeight: "22px",
+          color: "rgba(60,60,67,0.6)",
+          flexShrink: 0,
+        }}>{props.text2 ?? "􀁡"}</span>
+      </div>
+      {props.showText && (
+      <span style={{
+        position: "relative",
+        fontFamily: "\"Zoho Puvi\", \"SF Pro\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+        fontWeight: 400,
+        fontSize: 17,
+        textAlign: "center",
+        whiteSpace: "nowrap",
+        lineHeight: "22px",
+        letterSpacing: "-0.400px",
+        color: "var(--accents-blue)",
+        flexShrink: 0,
+        alignSelf: "stretch",
+      }}>{props.text3 ?? "Cancel"}</span>
+      )}
+    </div>
+  );
+  const __body2 = () => (
+    <div className={props.className} style={{
+      width: 361,
+      borderRadius: 10,
+      backgroundColor: "rgba(118,118,128,0.12)",
+      display: "flex",
+      flexDirection: "row",
+      padding: "7px 8px 7px 8px",
+      alignItems: "center",
+      flexWrap: "nowrap",
+      boxSizing: "border-box",
+      position: "relative",
+      ...props.style,
+    }}>
+      <span style={{
+        position: "relative",
+        fontFamily: "\"Zoho Puvi\", \"SF Pro\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+        fontWeight: 400,
+        fontSize: 17,
+        lineHeight: "22px",
+        color: "rgba(60,60,67,0.6)",
+        flexShrink: 0,
+        alignSelf: "stretch",
+        whiteSpace: "nowrap",
+      }}>{props.text1 ?? "􀊫"}</span>
+      {props.showText && (
+      <span style={{
+        position: "relative",
+        fontFamily: "\"Zoho Puvi\", \"SF Pro\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+        fontWeight: 400,
+        fontSize: 17,
+        whiteSpace: "nowrap",
+        lineHeight: "22px",
+        letterSpacing: "-0.400px",
+        color: "rgba(60,60,67,0.6)",
+        flexGrow: 1,
+        alignSelf: "stretch",
+      }}>{props.searchText}</span>
+      )}
+      <span style={{
+        position: "relative",
+        fontFamily: "\"Zoho Puvi\", \"SF Pro\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+        fontWeight: 400,
+        fontSize: 17,
+        textAlign: "center",
+        whiteSpace: "nowrap",
+        lineHeight: "22px",
+        color: "rgba(60,60,67,0.6)",
+        flexShrink: 0,
+        alignSelf: "stretch",
+      }}>{props.text2 ?? "􀊱"}</span>
+    </div>
+  );
+  const __impls = {
+    // figma: State=Typing
+    "state=typing": __body0,
+    // figma: State=Focused
+    "state=focused": __body1,
+    // figma: State=Placeholder
+    "state=placeholder": __body2,
+  };
+  return (__impls[__vkey(props)] ?? __body2)();
+}
+export default SearchFieldDark;

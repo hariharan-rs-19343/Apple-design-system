@@ -1,0 +1,33 @@
+<!-- @dsCard group="Components" viewport="700x420" name="Fields" subtitle="Find / replace fields (light & dark), search field states, contacts, menu bar items" -->
+<!DOCTYPE html><html><head><meta charset="utf-8"><link rel="stylesheet" href="../../styles.css"><script src="../../_ds_bundle.js"></script>
+<style>*{margin:0;padding:0;box-sizing:border-box}body{font-family:"SF Pro",-apple-system,BlinkMacSystemFont,system-ui,sans-serif;background:rgb(245,245,245);padding:16px}.grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px 12px}.cell{display:flex;flex-direction:column;gap:6px;min-width:0}.tile{background:#fff;border-radius:14px;height:60px;display:flex;align-items:center;justify-content:center;padding:0 12px;overflow:hidden}.tile.dark{background:rgb(28,28,30)}.tile.tall{height:128px}.tile>*{flex-shrink:0}.lbl{font-size:11px;line-height:13px;color:rgba(60,60,67,0.6);text-align:center}</style>
+</head><body><div id="root"></div>
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+<script type="text/babel">
+const NS = window.ZhareHubDesignSystem_d00ac0 || {};
+const items = [
+  ['FieldFind',{mode:'light',state:'default'},'Find · Light',''],
+  ['FieldFind',{mode:'light',state:'text entered'},'Find · Light · Text entered',''],
+  ['FieldFind',{mode:'dark',state:'default'},'Find · Dark','dark'],
+  ['FieldFind',{mode:'dark',state:'text entered'},'Find · Dark · Text entered','dark'],
+  ['FieldReplace',{mode:'light',state:'default'},'Replace · Light',''],
+  ['FieldReplace',{mode:'light',state:'typing'},'Replace · Light · Typing',''],
+  ['FieldReplace',{mode:'dark',state:'default'},'Replace · Dark','dark'],
+  ['FieldReplace',{mode:'dark',state:'typing'},'Replace · Dark · Typing','dark'],
+  ['SearchField',{state:'placeholder'},'Search · Placeholder','',2],
+  ['SearchField',{state:'typing'},'Search · Typing','',2],
+  ['Contact',{people:'1'},'Contact · 1 person','tall'],
+  ['Contact',{people:'2'},'Contact · 2 people','tall'],
+  ['MenuBarItem',{state:'deselected'},'Menu bar · Deselected','tall'],
+  ['MenuBarItem',{state:'selected'},'Menu bar · Selected','tall'],
+];
+function Cell({ name, p, label, cls, span }) {
+  const X = NS[name];
+  return <div className="cell" style={span ? { gridColumn: 'span ' + span } : null}><div className={'tile ' + (cls || '')}>{X ? <X {...p}/> : null}</div><div className="lbl">{label}</div></div>;
+}
+ReactDOM.createRoot(document.getElementById('root')).render(
+  <div className="grid">{items.map(([n, p, l, cls, span], i) => <Cell key={i} name={n} p={p} label={l} cls={cls} span={span}/>)}</div>
+);
+</script></body></html>

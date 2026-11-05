@@ -1,0 +1,21 @@
+<!-- @dsCard group="macOS" viewport="760x520" name="Buttons (macOS)" subtitle="iOS button styles on an 8px RoundedRectangle" -->
+<!DOCTYPE html><html><head><link rel="stylesheet" href="../../styles.css">
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="../../_ds_bundle.js"></script>
+<style>*{margin:0;padding:0;box-sizing:border-box}body{font-family:"Zoho Puvi",-apple-system,system-ui,sans-serif;background:rgb(245,245,245)}#root{padding:24px;display:flex;flex-direction:column;gap:20px}.lbl{font-size:11px;font-weight:600;color:rgba(60,60,67,0.6);text-transform:uppercase;letter-spacing:0.5px;margin-bottom:8px}.row{display:flex;gap:12px;align-items:center;flex-wrap:wrap}</style>
+</head><body><div id="root"></div>
+<script>
+const { MacButton } = window.ZhareHubDesignSystem_d00ac0;
+const h = React.createElement;
+const B = (p) => h(MacButton, p);
+const section = (title, kids) => h('div', null, h('div', { className: 'lbl' }, title), h('div', { className: 'row' }, ...kids));
+ReactDOM.createRoot(document.getElementById('root')).render(h(React.Fragment, null,
+  section('Liquid Glass', [B({ variant: 'glass', label: 'Label' }), B({ variant: 'glassTinted', label: 'Label' }), B({ variant: 'glass', iconOnly: true, shape: 'circle', symbol: '✓' }), B({ variant: 'glassTinted', iconOnly: true, shape: 'circle', symbol: '✓' })]),
+  section('Bordered Prominent', [B({ variant: 'prominent', size: 'small', symbol: '▶', label: 'Play' }), B({ variant: 'prominent', symbol: '▶', label: 'Play' }), B({ variant: 'prominent', size: 'large', symbol: '▶', label: 'Play', style: { height: 47 } }), B({ variant: 'prominent', size: 'small', symbol: '▶', label: 'Play', disabled: true }), B({ variant: 'prominent', symbol: '▶', label: 'Play', disabled: true })]),
+  section('Bordered Secondary', [B({ variant: 'secondary', size: 'small', symbol: '▶', label: 'Play' }), B({ variant: 'secondary', symbol: '▶', label: 'Play' }), B({ variant: 'secondary', size: 'large', symbol: '▶', label: 'Play' })]),
+  section('Borderless', [B({ variant: 'borderless', size: 'small', symbol: '▶', label: 'Play' }), B({ variant: 'borderless', symbol: '▶', label: 'Play' })]),
+  section('Destructive', [B({ variant: 'destructive', size: 'small', symbol: '▶', label: 'Play' }), B({ variant: 'destructive', symbol: '▶', label: 'Play' }), B({ variant: 'destructiveBorderless', symbol: '▶', label: 'Play' })])
+));
+</script>
+</body></html>

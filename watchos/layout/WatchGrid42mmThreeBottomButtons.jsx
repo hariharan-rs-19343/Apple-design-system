@@ -1,0 +1,186 @@
+// figma node: 6433:2554 Grid/42mm/Three Bottom Buttons
+export function WatchGrid42mmThreeBottomButtons(_p = {}) {
+  const props = _p;
+  return (
+    <div className={props.className} data-watch-mode="42mm" style={{
+      width: 187,
+      height: 223,
+      overflow: "hidden",
+      mixBlendMode: "screen",
+      borderRadius: 44,
+      boxShadow: "inset 0 0 0 2px var(--watch-colors-red)",
+      position: "relative",
+      ...props.style,
+    }}>
+      <svg width={161} height={191} viewBox="0 0 161 191" fill="none" style={{
+        position: "absolute",
+        left: 13,
+        top: 16,
+        width: 161,
+        height: 191,
+        color: "var(--watch-colors-green)",
+      }}>
+        <path d={"M 0 0 L 0 -0.5 L -0.5 -0.5 L -0.5 0 L 0 0 Z M 161 0 L 161.5 0 L 161.5 -0.5 L 161 -0.5 L 161 0 Z M 161 191 L 161 191.5 L 161.5 191.5 L 161.5 191 L 161 191 Z M 0 191 L -0.5 191 L -0.5 191.5 L 0 191.5 L 0 191 Z M 0 0 L 0 0.5 L 161 0.5 L 161 0 L 161 -0.5 L 0 -0.5 L 0 0 Z M 161 0 L 160.5 0 L 160.5 191 L 161 191 L 161.5 191 L 161.5 0 L 161 0 Z M 161 191 L 161 190.5 L 0 190.5 L 0 191 L 0 191.5 L 161 191.5 L 161 191 Z M 0 191 L 0.5 191 L 0.5 0 L 0 0 L -0.5 0 L -0.5 191 L 0 191 Z"} fill="currentColor" fillRule="nonzero" />
+      </svg>
+      <div style={{
+        position: "absolute",
+        left: 0,
+        top: 0,
+        width: 187,
+        height: 223,
+        borderRadius: 44,
+        boxShadow: "inset 0 0 0 3px var(--watch-colors-green)",
+      }} />
+      <svg width={187} height={0.500} viewBox="0 -0.250 187 0.500" fill="none" style={{
+        position: "absolute",
+        left: 0,
+        top: 61.25,
+        width: "calc(var(--watch-screen-width) * 1px)",
+        height: 0.5,
+        opacity: 0.5,
+        color: "var(--watch-colors-white-fff)",
+      }}>
+        <path d={"M 0 0.25 L 187 0.25 L 187 -0.25 L 0 -0.25 L 0 0.25 Z"} fill="currentColor" fillRule="nonzero" />
+      </svg>
+      <svg width={187} height={0.500} viewBox="0 -0.250 187 0.500" fill="none" style={{
+        position: "absolute",
+        left: 0,
+        top: 111.5,
+        width: "calc(var(--watch-screen-width) * 1px)",
+        height: 0.5,
+        color: "var(--watch-colors-green)",
+      }}>
+        <path d={"M 0 0 L 0 0.25 L 187 0.25 L 187 0 L 187 -0.25 L 0 -0.25 L 0 0 Z"} fill="currentColor" fillRule="nonzero" />
+      </svg>
+      <svg width={0.500} height={223} viewBox="-0.250 0 0.500 223" fill="none" style={{
+        position: "absolute",
+        left: 93.5,
+        top: 0,
+        width: 0.5,
+        height: 223,
+        color: "var(--watch-colors-green)",
+      }}>
+        <path d={"M 0 0 L -0.25 0 L -0.25 223 L 0 223 L 0.25 223 L 0.25 0 L 0 0 Z"} fill="currentColor" fillRule="nonzero" />
+      </svg>
+      <svg width={161} height={0.500} viewBox="0 -0.250 161 0.500" fill="none" style={{
+        position: "absolute",
+        left: 13,
+        top: 32,
+        width: 161,
+        height: 0.5,
+      }}>
+        <path d={"M 0 0 L 0 0.25 L 1.491 0.25 L 1.491 0 L 1.491 -0.25 L 0 -0.25 L 0 0 Z M 4.472 0 L 4.472 0.25 L 7.454 0.25 L 7.454 0 L 7.454 -0.25 L 4.472 -0.25 L 4.472 0 Z M 10.435 0 L 10.435 0.25 L 13.417 0.25 L 13.417 0 L 13.417 -0.25 L 10.435 -0.25 L 10.435 0 Z M 16.398 0 L 16.398 0.25 L 19.38 0.25 L 19.38 0 L 19.38 -0.25 L 16.398 -0.25 L 16.398 0 Z M 22.361 0 L 22.361 0.25 L 25.343 0.25 L 25.343 0 L 25.343 -0.25 L 22.361 -0.25 L 22.361 0 Z M 28.324 0 L 28.324 0.25 L 31.306 0.25 L 31.306 0 L 31.306 -0.25 L 28.324 -0.25 L 28.324 0 Z M 34.287 0 L 34.287 0.25 L 37.269 0.25 L 37.269 0 L 37.269 -0.25 L 34.287 -0.25 L 34.287 0 Z M 40.25 0 L 40.25 0.25 L 43.231 0.25 L 43.231 0 L 43.231 -0.25 L 40.25 -0.25 L 40.25 0 Z M 46.213 0 L 46.213 0.25 L 49.194 0.25 L 49.194 0 L 49.194 -0.25 L 46.213 -0.25 L 46.213 0 Z M 52.176 0 L 52.176 0.25 L 55.157 0.25 L 55.157 0 L 55.157 -0.25 L 52.176 -0.25 L 52.176 0 Z M 58.139 0 L 58.139 0.25 L 61.12 0.25 L 61.12 0 L 61.12 -0.25 L 58.139 -0.25 L 58.139 0 Z M 64.102 0 L 64.102 0.25 L 67.083 0.25 L 67.083 0 L 67.083 -0.25 L 64.102 -0.25 L 64.102 0 Z M 70.065 0 L 70.065 0.25 L 73.046 0.25 L 73.046 0 L 73.046 -0.25 L 70.065 -0.25 L 70.065 0 Z M 76.028 0 L 76.028 0.25 L 79.009 0.25 L 79.009 0 L 79.009 -0.25 L 76.028 -0.25 L 76.028 0 Z M 81.991 0 L 81.991 0.25 L 84.972 0.25 L 84.972 0 L 84.972 -0.25 L 81.991 -0.25 L 81.991 0 Z M 87.954 0 L 87.954 0.25 L 90.935 0.25 L 90.935 0 L 90.935 -0.25 L 87.954 -0.25 L 87.954 0 Z M 93.917 0 L 93.917 0.25 L 96.898 0.25 L 96.898 0 L 96.898 -0.25 L 93.917 -0.25 L 93.917 0 Z M 99.88 0 L 99.88 0.25 L 102.861 0.25 L 102.861 0 L 102.861 -0.25 L 99.88 -0.25 L 99.88 0 Z M 105.843 0 L 105.843 0.25 L 108.824 0.25 L 108.824 0 L 108.824 -0.25 L 105.843 -0.25 L 105.843 0 Z M 111.806 0 L 111.806 0.25 L 114.787 0.25 L 114.787 0 L 114.787 -0.25 L 111.806 -0.25 L 111.806 0 Z M 117.769 0 L 117.769 0.25 L 120.75 0.25 L 120.75 0 L 120.75 -0.25 L 117.769 -0.25 L 117.769 0 Z M 123.732 0 L 123.732 0.25 L 126.713 0.25 L 126.713 0 L 126.713 -0.25 L 123.732 -0.25 L 123.732 0 Z M 129.695 0 L 129.695 0.25 L 132.676 0.25 L 132.676 0 L 132.676 -0.25 L 129.695 -0.25 L 129.695 0 Z M 135.657 0 L 135.657 0.25 L 138.639 0.25 L 138.639 0 L 138.639 -0.25 L 135.657 -0.25 L 135.657 0 Z M 141.62 0 L 141.62 0.25 L 144.602 0.25 L 144.602 0 L 144.602 -0.25 L 141.62 -0.25 L 141.62 0 Z M 147.583 0 L 147.583 0.25 L 150.565 0.25 L 150.565 0 L 150.565 -0.25 L 147.583 -0.25 L 147.583 0 Z M 153.546 0 L 153.546 0.25 L 156.528 0.25 L 156.528 0 L 156.528 -0.25 L 153.546 -0.25 L 153.546 0 Z M 159.509 0 L 159.509 0.25 L 161 0.25 L 161 0 L 161 -0.25 L 159.509 -0.25 L 159.509 0 Z"} fill="currentColor" fillRule="nonzero" />
+      </svg>
+      <svg width={161} height={0.500} viewBox="0 -0.250 161 0.500" fill="none" style={{
+        position: "absolute",
+        left: 13,
+        top: 191,
+        width: 161,
+        height: 0.5,
+      }}>
+        <path d={"M 0 0 L 0 0.25 L 1.491 0.25 L 1.491 0 L 1.491 -0.25 L 0 -0.25 L 0 0 Z M 4.472 0 L 4.472 0.25 L 7.454 0.25 L 7.454 0 L 7.454 -0.25 L 4.472 -0.25 L 4.472 0 Z M 10.435 0 L 10.435 0.25 L 13.417 0.25 L 13.417 0 L 13.417 -0.25 L 10.435 -0.25 L 10.435 0 Z M 16.398 0 L 16.398 0.25 L 19.38 0.25 L 19.38 0 L 19.38 -0.25 L 16.398 -0.25 L 16.398 0 Z M 22.361 0 L 22.361 0.25 L 25.343 0.25 L 25.343 0 L 25.343 -0.25 L 22.361 -0.25 L 22.361 0 Z M 28.324 0 L 28.324 0.25 L 31.306 0.25 L 31.306 0 L 31.306 -0.25 L 28.324 -0.25 L 28.324 0 Z M 34.287 0 L 34.287 0.25 L 37.269 0.25 L 37.269 0 L 37.269 -0.25 L 34.287 -0.25 L 34.287 0 Z M 40.25 0 L 40.25 0.25 L 43.231 0.25 L 43.231 0 L 43.231 -0.25 L 40.25 -0.25 L 40.25 0 Z M 46.213 0 L 46.213 0.25 L 49.194 0.25 L 49.194 0 L 49.194 -0.25 L 46.213 -0.25 L 46.213 0 Z M 52.176 0 L 52.176 0.25 L 55.157 0.25 L 55.157 0 L 55.157 -0.25 L 52.176 -0.25 L 52.176 0 Z M 58.139 0 L 58.139 0.25 L 61.12 0.25 L 61.12 0 L 61.12 -0.25 L 58.139 -0.25 L 58.139 0 Z M 64.102 0 L 64.102 0.25 L 67.083 0.25 L 67.083 0 L 67.083 -0.25 L 64.102 -0.25 L 64.102 0 Z M 70.065 0 L 70.065 0.25 L 73.046 0.25 L 73.046 0 L 73.046 -0.25 L 70.065 -0.25 L 70.065 0 Z M 76.028 0 L 76.028 0.25 L 79.009 0.25 L 79.009 0 L 79.009 -0.25 L 76.028 -0.25 L 76.028 0 Z M 81.991 0 L 81.991 0.25 L 84.972 0.25 L 84.972 0 L 84.972 -0.25 L 81.991 -0.25 L 81.991 0 Z M 87.954 0 L 87.954 0.25 L 90.935 0.25 L 90.935 0 L 90.935 -0.25 L 87.954 -0.25 L 87.954 0 Z M 93.917 0 L 93.917 0.25 L 96.898 0.25 L 96.898 0 L 96.898 -0.25 L 93.917 -0.25 L 93.917 0 Z M 99.88 0 L 99.88 0.25 L 102.861 0.25 L 102.861 0 L 102.861 -0.25 L 99.88 -0.25 L 99.88 0 Z M 105.843 0 L 105.843 0.25 L 108.824 0.25 L 108.824 0 L 108.824 -0.25 L 105.843 -0.25 L 105.843 0 Z M 111.806 0 L 111.806 0.25 L 114.787 0.25 L 114.787 0 L 114.787 -0.25 L 111.806 -0.25 L 111.806 0 Z M 117.769 0 L 117.769 0.25 L 120.75 0.25 L 120.75 0 L 120.75 -0.25 L 117.769 -0.25 L 117.769 0 Z M 123.732 0 L 123.732 0.25 L 126.713 0.25 L 126.713 0 L 126.713 -0.25 L 123.732 -0.25 L 123.732 0 Z M 129.695 0 L 129.695 0.25 L 132.676 0.25 L 132.676 0 L 132.676 -0.25 L 129.695 -0.25 L 129.695 0 Z M 135.657 0 L 135.657 0.25 L 138.639 0.25 L 138.639 0 L 138.639 -0.25 L 135.657 -0.25 L 135.657 0 Z M 141.62 0 L 141.62 0.25 L 144.602 0.25 L 144.602 0 L 144.602 -0.25 L 141.62 -0.25 L 141.62 0 Z M 147.583 0 L 147.583 0.25 L 150.565 0.25 L 150.565 0 L 150.565 -0.25 L 147.583 -0.25 L 147.583 0 Z M 153.546 0 L 153.546 0.25 L 156.528 0.25 L 156.528 0 L 156.528 -0.25 L 153.546 -0.25 L 153.546 0 Z M 159.509 0 L 159.509 0.25 L 161 0.25 L 161 0 L 161 -0.25 L 159.509 -0.25 L 159.509 0 Z"} fill="currentColor" fillRule="nonzero" />
+      </svg>
+      <div style={{
+        position: "absolute",
+        left: 13,
+        top: 16,
+        width: 161,
+        height: 191,
+      }}>
+        <div style={{
+          position: "absolute",
+          left: 0,
+          top: 0,
+          width: 32,
+          height: 32,
+          boxShadow: "inset 0 0 0 0.500px var(--watch-colors-green)",
+        }}>
+          <div style={{
+            position: "absolute",
+            left: 0,
+            top: 0,
+            width: 32,
+            height: 32,
+            borderRadius: "50%",
+            boxShadow: "inset 0 0 0 0.500px var(--watch-colors-green)",
+          }} />
+        </div>
+        <div style={{
+          position: "absolute",
+          left: 129,
+          top: 0,
+          width: 32,
+          height: 32,
+          boxShadow: "inset 0 0 0 0.500px var(--watch-colors-green)",
+        }}>
+          <div style={{
+            position: "absolute",
+            left: 0,
+            top: 0,
+            width: 32,
+            height: 32,
+            borderRadius: "50%",
+            boxShadow: "inset 0 0 0 0.500px var(--watch-colors-green)",
+          }} />
+        </div>
+        <div style={{
+          position: "absolute",
+          left: 0,
+          top: 159,
+          width: 32,
+          height: 32,
+          boxShadow: "inset 0 0 0 0.500px var(--watch-colors-green)",
+        }}>
+          <div style={{
+            position: "absolute",
+            left: 0,
+            top: 0,
+            width: 32,
+            height: 32,
+            borderRadius: "50%",
+            boxShadow: "inset 0 0 0 0.500px var(--watch-colors-green)",
+          }} />
+        </div>
+        <div style={{
+          position: "absolute",
+          left: 129,
+          top: 159,
+          width: 32,
+          height: 32,
+          boxShadow: "inset 0 0 0 0.500px var(--watch-colors-green)",
+        }}>
+          <div style={{
+            position: "absolute",
+            left: 0,
+            top: 0,
+            width: 32,
+            height: 32,
+            borderRadius: "50%",
+            boxShadow: "inset 0 0 0 0.500px var(--watch-colors-green)",
+          }} />
+        </div>
+      </div>
+      <div style={{
+        position: "absolute",
+        left: 72.5,
+        top: 170,
+        boxShadow: "inset 0 0 0 0.500px var(--watch-colors-green)",
+        display: "flex",
+        flexDirection: "row",
+        gap: 10,
+        alignItems: "center",
+        flexWrap: "nowrap",
+      }}>
+        <div style={{
+          position: "relative",
+          width: 42,
+          height: 42,
+          borderRadius: "50%",
+          boxShadow: "inset 0 0 0 0.500px var(--watch-colors-green)",
+          flexShrink: 0,
+        }} />
+      </div>
+    </div>
+  );
+}
+export default WatchGrid42mmThreeBottomButtons;

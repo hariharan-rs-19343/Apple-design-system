@@ -1,0 +1,47 @@
+<!-- @dsCard group="Components" viewport="700x280" name="Keyboards" subtitle="iPhone keyboard — lowercase letters, light and dark" -->
+<!DOCTYPE html><html><head><meta charset="utf-8"><link rel="stylesheet" href="../../styles.css">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,BlinkMacSystemFont,"SF Pro",system-ui,sans-serif;background:rgb(245,245,245);padding:16px;display:flex;gap:16px;justify-content:center}
+.kb{width:402px;border-radius:27px 27px 62px 62px;padding:10px 0 0;flex-shrink:0;zoom:0.81}
+.kb.light{background:rgb(226,228,233)}
+.kb.dark{background:rgb(43,43,45)}
+.keys{display:flex;flex-direction:column;gap:11px;padding:0 6.67px}
+.row{display:flex;gap:6px;justify-content:center;height:43px}
+.row.r2{padding:0 20px}
+.row.r3{gap:13px}
+.mid{display:flex;gap:6px;flex:1}
+.k{width:32px;height:43px;border-radius:8.5px;display:flex;align-items:center;justify-content:center;font-family:"SF Compact",-apple-system,system-ui,sans-serif;font-weight:457;font-size:25px;line-height:30px;padding-bottom:4px;flex:1}
+.light .k{background:rgb(252,252,254);color:rgb(0,0,0);box-shadow:0 1px 0 rgba(0,0,0,0.16)}
+.dark .k{background:rgba(237,237,237,0.17);color:rgb(255,255,255)}
+.fn{flex:0 0 46px;font-size:18px;padding:0}
+.light .fn{background:rgb(171,177,186)}
+.dark .fn{background:rgba(237,237,237,0.09)}
+.r4 .fn{flex:0 0 92px;font-size:18px;line-height:28px}
+.sp{flex:1}
+.ret{flex:0 0 92px;padding:0;font-size:22px}
+.light .ret,.dark .ret{background:rgb(0,145,255);color:#fff}
+.bottom{height:56px;display:flex;justify-content:space-between;align-items:center;padding:0 32px 6px}
+.light .bottom{color:rgb(89,89,89)}
+.dark .bottom{color:rgb(166,166,166)}
+.bottom span{font-size:24px}
+</style></head><body>
+<div class="kb light">
+<div class="keys">
+<div class="row"><div class="k">q</div><div class="k">w</div><div class="k">e</div><div class="k">r</div><div class="k">t</div><div class="k">y</div><div class="k">u</div><div class="k">i</div><div class="k">o</div><div class="k">p</div></div>
+<div class="row r2"><div class="k">a</div><div class="k">s</div><div class="k">d</div><div class="k">f</div><div class="k">g</div><div class="k">h</div><div class="k">j</div><div class="k">k</div><div class="k">l</div></div>
+<div class="row r3"><div class="k fn">⇧</div><div class="mid"><div class="k">z</div><div class="k">x</div><div class="k">c</div><div class="k">v</div><div class="k">b</div><div class="k">n</div><div class="k">m</div></div><div class="k fn">⌫</div></div>
+<div class="row r4"><div class="k fn">ABC</div><div class="k sp"></div><div class="k ret">↵</div></div>
+</div>
+<div class="bottom"><span>☺</span><span></span></div>
+</div>
+<div class="kb dark">
+<div class="keys">
+<div class="row"><div class="k">q</div><div class="k">w</div><div class="k">e</div><div class="k">r</div><div class="k">t</div><div class="k">y</div><div class="k">u</div><div class="k">i</div><div class="k">o</div><div class="k">p</div></div>
+<div class="row r2"><div class="k">a</div><div class="k">s</div><div class="k">d</div><div class="k">f</div><div class="k">g</div><div class="k">h</div><div class="k">j</div><div class="k">k</div><div class="k">l</div></div>
+<div class="row r3"><div class="k fn">⇧</div><div class="mid"><div class="k">z</div><div class="k">x</div><div class="k">c</div><div class="k">v</div><div class="k">b</div><div class="k">n</div><div class="k">m</div></div><div class="k fn">⌫</div></div>
+<div class="row r4"><div class="k fn">ABC</div><div class="k sp"></div><div class="k ret">↵</div></div>
+</div>
+<div class="bottom"><span>☺</span><span></span></div>
+</div>
+</body></html>

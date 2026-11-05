@@ -1,0 +1,3 @@
+/* macOS 26 desktop wallpapers (over the extractor's per-image budget; copied verbatim from the kit). */
+.mac-wallpaper-light{background:url(./assets/wallpaper-light.png) center / cover no-repeat}
+.mac-wallpaper-dark{background:url(./assets/wallpaper-dark.png) center / cover no-repeat}
